@@ -13,7 +13,7 @@ body {
     min-height: 200vh;
     width: 99.92%; /* Change this to 100% later */
     grid-template-columns: 1fr;
-    grid-template-rows: 0.52fr 1fr 80px;
+    grid-template-rows: 0.6fr 1fr 80px;
     grid-template-areas: "header"
                         "content"
                         "footer";
@@ -44,7 +44,7 @@ body {
 @media only screen and (max-width:600px) { /* For phones */
     .top-bar {
         grid-column-gap: 4px;
-        grid-template-columns: 1.5fr 5fr 1.5fr;
+        grid-template-columns: 1.5fr 1.5fr 0.5fr;
         grid-template-rows: 1fr;
         grid-template-areas: "game-title search-bar buttons";
     }
@@ -102,99 +102,10 @@ body {
 
     .buttons {
         grid-area: buttons;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: "button-news button-about button-forum button-contact button-donate button-login button-signup"
-    }
-
-    .buttons > a {
-        text-decoration: none;
-        position: relative;
-    }
-
-    .buttons > a > div {
-        margin: 0;
-        padding: 0;
-        color: #a9a9a9;
-        font-size: 8px;
         text-align: center;
-        height: 100%;
-    }
-
-    .buttons > a > div > h1 {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translateY(-50%) translateX(-50%);
-        font-weight: bold;
-    }
-
-    .buttons > a:hover > div > h1 {
-        color: whitesmoke;
-    }
-    
-    .buttons > a:hover:not(.active):not(#button-signup):after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20%;
-        border-bottom:2px solid silver;
-        box-shadow: 0px 0px 10px #fff;
-    }
-
-    .active:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20%;
-        border-bottom:3px solid #f1c40f;
-        box-shadow: 0px 0px 10px #f1c40f;
-    }
-
-    .active > div > h1 {
-        color: whitesmoke
-    }
-
-    #button-news {
-        grid-area: button-news;
-    }
-    #button-about {
-        grid-area: button-about;
-    }
-    #button-forum {
-        grid-area: button-forum;
-    }
-    #button-contact {
-        grid-area: button-contact;
-    }
-    #button-donate {
-        grid-area: button-donate;
-    }
-    #button-login {
-        grid-area: button-login;
-    }
-    #button-signup {
-        grid-area: button-signup;
-    }
-    .signup {
-        border: 1px solid #f1c40f;
-        border-radius: 4px;
-        background-color: #f1c40f;
-        color: black;
-        font-weight: bold;
-        width: 80%;
-        padding: 8px;
-        text-shadow: 1px 0 black;
-        letter-spacing: 1px;
     }
 
     .buttons > a > img {
-        display: none;
         height: 20px;
         width: 20px;
         position: relative;
@@ -202,18 +113,112 @@ body {
         transform: translateY(-50%);
     }
 
-    @media only screen and (max-width:600px) { /* For phones */
+    .buttons > a > div {
+        display: none
+    }
+
+    @media only screen and (min-width:600px) { /* For normal screens */
         .buttons {
-            grid-area: buttons;
+                grid-area: buttons;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: 1fr;
+                grid-template-areas: "button-news button-about button-forum button-contact button-donate button-login button-signup"
+        }
+
+        .buttons > a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        .buttons > a > div {
+            margin: 0;
+            padding: 0;
+            color: #a9a9a9;
+            font-size: 8px;
             text-align: center;
+            height: 100%;
+        }
+
+        .buttons > a > div > h1 {
+            position: absolute;
+            left: 50%;
+            top: 37%;
+            transform: translateY(-50%) translateX(-50%);
+            font-weight: bold;
+        }
+
+        .buttons > a:hover > div > h1 {
+            color: whitesmoke;
+        }
+        
+        .buttons > a:hover:not(.active):not(#button-signup):after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            border-bottom:2px solid silver;
+            box-shadow: 0px 0px 10px #fff;
+        }
+
+        .active:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            border-bottom:3px solid #f1c40f;
+            box-shadow: 0px 0px 10px #f1c40f;
+        }
+
+        .active > div > h1 {
+            color: whitesmoke
+        }
+
+        #button-news {
+            grid-area: button-news;
+        }
+        #button-about {
+            grid-area: button-about;
+        }
+        #button-forum {
+            grid-area: button-forum;
+        }
+        #button-contact {
+            grid-area: button-contact;
+        }
+        #button-donate {
+            grid-area: button-donate;
+        }
+        #button-login {
+            grid-area: button-login;
+        }
+        #button-signup {
+            grid-area: button-signup;
+        }
+        .signup {
+            border: 1px solid #f1c40f;
+            border-radius: 4px;
+            background-color: #f1c40f;
+            color: black;
+            font-weight: bold;
+            width: 80%;
+            padding: 8px;
+            text-shadow: 1px 0 black;
+            letter-spacing: 1px;
         }
 
         .buttons > a > img {
+            display: none;
+        }
+
+        .buttons > a > div {
             display: initial;
         }
     }
-
-
 
 .intro {
     height: 85%;
