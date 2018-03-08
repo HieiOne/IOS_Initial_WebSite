@@ -100,6 +100,7 @@ body {
 
     .buttons > a {
         text-decoration: none;
+        position: relative;
     }
 
     .buttons > a > div {
@@ -118,25 +119,55 @@ body {
         font-weight: bold;
     }
 
-    .button-news {
+    .buttons > a:hover > div > h1 {
+        color: whitesmoke;
+    }
+    
+    .buttons > a:hover:not(.active):not(#button-signup):after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        border-bottom:2px solid silver;
+        box-shadow: 0px 0px 10px #fff;
+    }
+
+    .active:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        border-bottom:3px solid #f1c40f;
+        box-shadow: 0px 0px 10px #f1c40f;
+    }
+
+    .active > div > h1 {
+        color: whitesmoke
+    }
+
+    #button-news {
         grid-area: button-news;
     }
-    .button-about {
+    #button-about {
         grid-area: button-about;
     }
-    .button-forum {
+    #button-forum {
         grid-area: button-forum;
     }
-    .button-contact {
+    #button-contact {
         grid-area: button-contact;
     }
-    .button-donate {
+    #button-donate {
         grid-area: button-donate;
     }
-    .button-login {
+    #button-login {
         grid-area: button-login;
     }
-    .button-signup {
+    #button-signup {
         grid-area: button-signup;
     }
     .signup {
