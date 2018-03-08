@@ -1,0 +1,5 @@
+Background - #1c1c1e
+Background border - #28282a
+Box background - #161618
+Yellow text - #f1c40f
+Purple text - #6f5fbf
