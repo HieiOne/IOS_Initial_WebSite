@@ -25,12 +25,23 @@ body {
 /* Header */
 .header {
     grid-area: header;
+    position: relative;
 }
 
 .header > div {
     border: 1px solid #28282a;
-    background-color: #1B1A1A;
+    background-color: rgba(27,26,26,0.9);
 }
+
+    .background {
+        background-image: url(../img/temporary.jpg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;  
+    }
 
     .top-bar {
         height: 15%;
@@ -105,7 +116,7 @@ body {
             color: #a9a9a9;
             width: 100%;
             position: relative;
-
+            opacity: 0.8;
         }
 
         .buttons {
@@ -231,12 +242,12 @@ body {
     .intro {
         height: 85%;
         display: grid;
-        grid-template-columns: 0.8fr 1fr;
-        grid-template-rows: 1fr 0.5fr 0.3fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 0.5fr 0.3fr 0.5fr;
         grid-template-areas: "gameprice video"
                             "description video"
                             "download video"
-                            "socialnetworks video"
+                            "socialnetworks video";
     }
 
     .intro > div {
@@ -252,7 +263,7 @@ body {
         }
 
         .gameprice > p {
-            margin-left: 20%;
+            margin-left: 30%;
             align-self: flex-end;
             display: flex;
             letter-spacing: 4px;
@@ -281,7 +292,7 @@ body {
 
         .description > p {
             padding: 0;
-            margin-left: 13.5%;
+            margin-left: 22.5%;
             font-size: x-large;
             letter-spacing: 1.3px;
         }
@@ -292,7 +303,7 @@ body {
 
         .download > button {
             line-height: 1.5em;
-            margin-left: 13%;
+            margin-left: 22.5%;
             padding: 12px;
             width: 140px;
             background: white;
@@ -319,7 +330,7 @@ body {
         }
 
         .socialnetworks > .images {
-            margin-left: 13%;
+            margin-left: 22.5%;
             width: 50%;
         }
 
@@ -331,6 +342,7 @@ body {
         }
 
         .video {
+            opacity: initial;
             grid-area: video;
             position: relative;
         }
@@ -341,7 +353,7 @@ body {
             border: 0px;
             position: absolute;
             top: 50%;
-            left: 35%;
+            left: 30%;
             transform: translateY(-50%) translateX(-50%);
         }
 
