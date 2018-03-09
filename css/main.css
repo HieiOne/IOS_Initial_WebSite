@@ -231,7 +231,7 @@ body {
     .intro {
         height: 85%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
         grid-template-rows: 1fr 0.5fr 0.3fr 0.5fr;
         grid-template-areas: "gameprice video"
                             "description video"
@@ -240,7 +240,6 @@ body {
     }
 
     .intro > div {
-        border: 1px solid blue;
         color: whitesmoke;
         font-weight: bolder;
     }
@@ -284,7 +283,7 @@ body {
             padding: 0;
             margin-left: 13.5%;
             font-size: x-large;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.3px;
         }
 
         .download {
@@ -292,7 +291,7 @@ body {
         }
 
         .download > button {
-            line-height: 1em;
+            line-height: 1.5em;
             margin-left: 13%;
             padding: 12px;
             width: 140px;
@@ -317,6 +316,17 @@ body {
 
         .socialnetworks {
             grid-area: socialnetworks;
+        }
+
+        .socialnetworks > .images {
+            margin-left: 13%;
+        }
+
+        .socialnetworks > .images > a > img {
+            height: 25px;
+            width: 25px;
+            margin-right: 2%;
+            opacity: 0.3;
         }
 
         .video {
