@@ -50,6 +50,15 @@ body {
     }
 }
 
+@media only screen and (max-width:800px) { /* For tablets and small screens */
+    .top-bar {
+        grid-column-gap: 0px;
+        grid-template-columns: 1.5fr 1.5fr 6fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "game-title search-bar buttons";
+    }
+}
+
     .game-title {
         grid-area: game-title;
         position: relative;
@@ -143,7 +152,7 @@ body {
         .buttons > a > div > h1 {
             position: absolute;
             left: 50%;
-            top: 37%;
+            top: 38%;
             transform: translateY(-50%) translateX(-50%);
             font-weight: bold;
         }
