@@ -278,8 +278,7 @@ body {
             grid-template-areas: "gameprice"
                                 "description"
                                 "download"
-                                "socialnetworks"
-                                "video";
+                                "socialnetworks";
         }
 
 
@@ -421,6 +420,14 @@ body {
     margin-left: 5%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.footer > h2 {
+    color: whitesmoke;
+    font-size: small;
+    position: relative;
+    text-align: right;
+    margin-right: 5%;
 }
 
 input:-webkit-autofill,
