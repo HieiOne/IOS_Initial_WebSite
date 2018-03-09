@@ -505,7 +505,6 @@ body {
 
     .latest-matches {
         grid-area: latest-matches;
-        border: 1px solid green;
     }
 
     .latest-matches > p {
@@ -528,9 +527,126 @@ body {
         margin-top: 8px;
     }
 
+    .latest-matches > .match {
+        margin-left: 7%;
+        height: 75%;
+        width: 37%;
+        background-color: #161618;
+        float: left;
+        margin-bottom: 1%;
+    }
+
+    .latest-matches > .match > .match-team-home {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .latest-matches > .match > .match-info {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+    }
+
+    .match-info > .match-score {
+        height: 50%;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .match-info > .match-date {
+        height: 50%;
+        position: relative;
+    }
+
+    .match-score > p {
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: xx-large;
+        letter-spacing: 2px;
+    }
+
+    .match-date > p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-weight: initial;
+        font-size: small;
+        opacity: 0.8;
+    }
+
+    .latest-matches > .match > .match-team-away {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .match-team-image > img {
+        display: block;
+        height: 40%;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
     .league-table {
         grid-area: league-table
     }
+
+    table {
+        margin-left: 7%;
+        width: 100%;
+    }
+    
+    th:first-child {
+        width: 40%;
+    }
+
+    /* th {
+        letter-spacing: 4px;
+        font-size: 13px;
+    } */
+
+    th > span {
+        letter-spacing: 4px;
+        font-size: 13px;
+    }
+
+    /* .league-table > p {
+        margin-left: 10%;
+        letter-spacing: 4px;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .league-table > p > span:before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        border: 1px solid #f1c40f;
+        background: #f1c40f;
+        border-radius: 15px;
+        right: 100%;
+        margin-right: 1%;
+        margin-top: 8px;
+    } */
 
     .twitter {
         grid-area: twitter;
@@ -556,10 +672,27 @@ body {
         margin-top: 8px;
     }
 
+    .twitter-timeline {
+        margin-left: 2%;
+    }
+
+
     .content-news {
         grid-area: content-news;
         border: 1px solid green;
 
+    }
+
+    @media only screen and (max-height:800px) {
+        .teams > .team {
+            width: 18%;
+            height: 55%;
+        }
+
+        .latest-matches > .match {
+            height: 55%;
+            width: 43%;
+        }
     }
 
 /* Footer */
