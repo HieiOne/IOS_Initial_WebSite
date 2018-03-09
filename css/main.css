@@ -239,123 +239,146 @@ body {
             }
         }
 
-    .intro {
-        height: 85%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.8fr 0.5fr 0.3fr 0.5fr;
-        grid-template-areas: "gameprice video"
-                            "description video"
-                            "download video"
-                            "socialnetworks video";
+    @media only screen and (min-height:600px) { /* For screens more than 600px of height */
+        .intro {
+            height: 85%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.8fr 0.5fr 0.3fr 0.5fr;
+            grid-template-areas: "gameprice video"
+                                "description video"
+                                "download video"
+                                "socialnetworks video";
+        }
     }
 
-    .intro > div {
-        color: whitesmoke;
-        font-weight: bolder;
-    }
-        .gameprice {
-            grid-area: gameprice;
-            position: relative;
-            text-align: center;
-            display: flex;
-            height: 100%;
-        }
-
-        .gameprice > p {
-            margin-left: 30%;
-            align-self: flex-end;
-            display: flex;
-            letter-spacing: 4px;
-            font-size: 13px;
-            position: relative;
-            text-shadow: 0px 0px 2px whitesmoke;
-        }
-
-        .gameprice > p > span:before {
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            border: 1px solid #f1c40f;
-            background: #f1c40f;
-            box-shadow: 0px 0px 10px #f1c40f;
-            border-radius: 15px;
-            right: 100%;
-            margin-right: 10%;
-            margin-top: 5%;
-        }
-
-        .description {
-            grid-area: description;
-        }
-
-        .description > p {
-            padding: 0;
-            margin-left: 22.5%;
-            font-size: x-large;
-            letter-spacing: 1.3px;
-        }
-
-        .download {
-            grid-area: download;
-        }
-
-        .download > button {
-            line-height: 1.5em;
-            margin-left: 22.5%;
-            padding: 12px;
-            width: 140px;
-            background: white;
-            border-color: white;
-            border: 0px solid #1B1A1A;
-            font-weight: bold;
-            color: #666666;
-            font-size: 12px;
-            letter-spacing: 1.5px;
-            cursor: pointer;
-            box-shadow: 0px 0 3px whitesmoke;
-        }
-
-        .download > button::after {
-            content: "  ➜";
-            font-size: 16px;
-            font-weight: bold;
-            color: #f1c40f;
-            
-        }
-
-        .socialnetworks {
-            grid-area: socialnetworks;
+    @media only screen and (max-height:600px) { /* For screens less than 600px of height */
+        .intro {
+            height: 85%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
+            grid-template-areas: "gameprice video"
+                                "description video"
+                                "download video"
+                                "socialnetworks video";
         }
 
         .socialnetworks > .images {
-            margin-left: 22.5%;
-            width: 50%;
-        }
-
-        .socialnetworks > .images > a > img {
-            height: 25px;
-            width: 25px;
-            margin-right: 3%;
-            opacity: 0.2;
+            margin-top: 3%;
         }
 
         .video {
-            opacity: initial;
-            grid-area: video;
-            position: relative;
+            margin-left: 10%;
         }
+    }
 
-        .video > iframe {
-            width: 60%;
-            height: 65%;
-            border: 0px;
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translateY(-50%) translateX(-50%);
+        .intro > div {
+            color: whitesmoke;
+            font-weight: bolder;
         }
+            .gameprice {
+                grid-area: gameprice;
+                position: relative;
+                text-align: center;
+                display: flex;
+                height: 100%;
+            }
+
+            .gameprice > p {
+                margin-left: 30%;
+                align-self: flex-end;
+                display: flex;
+                letter-spacing: 4px;
+                font-size: 13px;
+                position: relative;
+                text-shadow: 0px 0px 2px whitesmoke;
+            }
+
+            .gameprice > p > span:before {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 2px;
+                border: 1px solid #f1c40f;
+                background: #f1c40f;
+                box-shadow: 0px 0px 10px #f1c40f;
+                border-radius: 15px;
+                right: 100%;
+                margin-right: 10%;
+                margin-top: 5%;
+            }
+
+            .description {
+                grid-area: description;
+            }
+
+            .description > p {
+                padding: 0;
+                margin-left: 22.5%;
+                font-size: x-large;
+                letter-spacing: 1.3px;
+            }
+
+            .download {
+                grid-area: download;
+            }
+
+            .download > button {
+                line-height: 1.5em;
+                margin-left: 22.5%;
+                padding: 12px;
+                width: 140px;
+                background: white;
+                border-color: white;
+                border: 0px solid #1B1A1A;
+                font-weight: bold;
+                color: #666666;
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+                box-shadow: 0px 0 3px whitesmoke;
+            }
+
+            .download > button::after {
+                content: "  ➜";
+                font-size: 16px;
+                font-weight: bold;
+                color: #f1c40f;
+                
+            }
+
+            .socialnetworks {
+                grid-area: socialnetworks;
+            }
+
+            .socialnetworks > .images {
+                margin-left: 22.5%;
+                width: 50%;
+            }
+
+            .socialnetworks > .images > a > img {
+                height: 25px;
+                width: 25px;
+                margin-right: 3%;
+                opacity: 0.2;
+            }
+
+            .video {
+                opacity: initial;
+                grid-area: video;
+                position: relative;
+            }
+
+            .video > iframe {
+                width: 80%;
+                height: 65%;
+                border: 0px;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translateY(-50%) translateX(-50%);
+            }
 
 /* Content */
 .content {
