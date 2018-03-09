@@ -320,17 +320,29 @@ body {
 
         .socialnetworks > .images {
             margin-left: 13%;
+            width: 50%;
         }
 
         .socialnetworks > .images > a > img {
             height: 25px;
             width: 25px;
-            margin-right: 2%;
-            opacity: 0.3;
+            margin-right: 3%;
+            opacity: 0.2;
         }
 
         .video {
             grid-area: video;
+            position: relative;
+        }
+
+        .video > iframe {
+            width: 60%;
+            height: 65%;
+            border: 0px;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translateY(-50%) translateX(-50%);
         }
 
 /* Content */
