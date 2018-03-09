@@ -232,12 +232,11 @@ body {
         height: 85%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.3fr 0.5fr;
         grid-template-areas: "gameprice video"
-                            "gameprice video"
                             "description video"
+                            "download video"
                             "socialnetworks video"
-                            ". video"
     }
 
     .intro > div {
@@ -254,8 +253,27 @@ body {
         }
 
         .gameprice > p {
-            margin-left: 10%;
+            margin-left: 20%;
             align-self: flex-end;
+            display: flex;
+            letter-spacing: 4px;
+            font-size: 13px;
+            position: relative;
+            text-shadow: 0px 0px 2px whitesmoke;
+        }
+
+        .gameprice > p > span:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            border: 1px solid #f1c40f;
+            background: #f1c40f;
+            box-shadow: 0px 0px 10px #f1c40f;
+            border-radius: 15px;
+            right: 100%;
+            margin-right: 10%;
+            margin-top: 5%;
         }
 
         .description {
@@ -263,7 +281,38 @@ body {
         }
 
         .description > p {
-            margin-left: 4%;
+            padding: 0;
+            margin-left: 13.5%;
+            font-size: x-large;
+            letter-spacing: 1.5px;
+        }
+
+        .download {
+            grid-area: download;
+        }
+
+        .download > button {
+            line-height: 1em;
+            margin-left: 13%;
+            padding: 12px;
+            width: 140px;
+            background: white;
+            border-color: white;
+            border: 0px solid #1B1A1A;
+            font-weight: bold;
+            color: #666666;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            box-shadow: 0px 0 3px whitesmoke;
+        }
+
+        .download > button::after {
+            content: "  ➜";
+            font-size: 16px;
+            font-weight: bold;
+            color: #f1c40f;
+            
         }
 
         .socialnetworks {
