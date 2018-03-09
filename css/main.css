@@ -243,8 +243,8 @@ body {
         .intro {
             height: 85%;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.8fr 0.5fr 0.3fr 0.5fr;
+            grid-template-columns: 0.6fr 1fr;
+            grid-template-rows: 0.6fr 0.5fr 0.3fr 0.5fr;
             grid-template-areas: "gameprice video"
                                 "description video"
                                 "download video"
@@ -267,9 +267,25 @@ body {
         .socialnetworks > .images {
             margin-top: 3%;
         }
+    }
 
-        .video {
-            margin-left: 10%;
+    @media only screen and (max-width:600px) { /* For phones */
+        .intro {
+            height: 85%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 1fr 0.3fr 0.5fr;
+            grid-template-areas: "gameprice"
+                                "description"
+                                "download"
+                                "socialnetworks"
+                                "video";
+        }
+
+
+
+        .socialnetworks > .images {
+            margin-top: 3%;
         }
     }
 
@@ -361,6 +377,7 @@ body {
                 height: 25px;
                 width: 25px;
                 margin-right: 3%;
+                margin-top: 0%;
                 opacity: 0.2;
             }
 
@@ -371,12 +388,12 @@ body {
             }
 
             .video > iframe {
-                width: 80%;
-                height: 65%;
+                width: 60%;
+                height: 70%;
                 border: 0px;
                 position: absolute;
                 top: 50%;
-                left: 30%;
+                left: 40%;
                 transform: translateY(-50%) translateX(-50%);
             }
 
