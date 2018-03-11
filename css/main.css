@@ -144,7 +144,7 @@ body {
             .buttons {
                     grid-area: buttons;
                     display: grid;
-                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-columns: repeat(6, 1fr);
                     grid-template-rows: 1fr;
                     grid-template-areas: "button-news button-about button-contact button-donate button-login button-signup"
             }
