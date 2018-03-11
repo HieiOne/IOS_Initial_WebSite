@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php
-        $db = mysqli_connect("127.0.0.1", "root", "", "iosf-website");
+        $db = mysqli_connect("127.0.0.1", "root", "", "iosf_website");
 
         if (!$db) {
             echo "Error: Unable to connect to MySQL." . PHP_EOL;
