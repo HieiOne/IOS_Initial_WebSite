@@ -11,7 +11,7 @@ body {
 #main {
     display: grid;
     min-height: 250vh;
-    width: 99.92%; /* Change this to 100% later */
+    width: 100%; /* Change this to 100% later */
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
     grid-template-rows: 0.8fr 1.8fr 80px;
@@ -50,7 +50,7 @@ body {
     .top-bar {
         height: 15%;
         display: grid;
-        width: 100%;
+        width: 99.92%;
         grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
         grid-template-rows: 1fr;
         grid-template-areas: "game-title search-bar buttons .";
@@ -146,7 +146,7 @@ body {
                     display: grid;
                     grid-template-columns: repeat(7, 1fr);
                     grid-template-rows: 1fr;
-                    grid-template-areas: "button-news button-about button-forum button-contact button-donate button-login button-signup"
+                    grid-template-areas: "button-news button-about button-contact button-donate button-login button-signup"
             }
 
             .buttons > a {
@@ -416,14 +416,23 @@ body {
         grid-area: teams;
     }
 
-    .teams > p {
+    .title {
+        height: 8%;
+        position: relative;
+    }
+
+    .title > p {
+        margin: 0;
+        padding: 0;
         margin-left: 10%;
         letter-spacing: 4px;
         font-size: 13px;
         position: relative;
+        top: 50%;
+        transform: translateY(-50%);  
     }
 
-    .teams > p > span:before {
+    .title > p > span:before {
         content: "";
         position: absolute;
         width: 25px;
@@ -436,22 +445,31 @@ body {
         margin-top: 8px;
     }
 
-    .teams > .team {
+    .team-div {
+        width: 100%;
+        height: 84%;
+    }
+
+    
+    .team-div > .team {
         margin-left: 7%;
         background-color: #161618;
         width: 15%;
-        height: 75%;
+        height: 90%;
         float: left;
         margin-bottom: 1%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);  
     }
 
-    .teams > .team > .team-image {
+    .team > .team-image {
         width: 100%;
         height: 75%;
         position: relative;
     }
 
-    .teams > .team > .team-image > img {
+    .team > .team-image > img {
         display: block;
         height: 70%;
         width: 70%;
@@ -461,27 +479,31 @@ body {
         transform: translateY(-50%) translateX(-50%);
     }
 
-    .teams > .team > .team-name {
+    .team > .team-name {
         width: 100%;
         height: 12.5%;
         position: relative;
+        text-align: center;
     }
 
-    .teams > .team > .team-result {
-        width: 100%;
-        height: 12.5%;
-        position: relative;
-    }
-
-    .team-name > p, .team-result > p {
-        width: 100%;
+    .team-name > p {
         margin: 0;
         padding: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .team > .team-result {
+        width: 100%;
+        height: 12.5%;
+        position: relative;
         text-align: center;
-        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .team-result > p {
+        margin: 0;
+        padding: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -490,7 +512,7 @@ body {
     .pagination {
         clear: both;
         width: 50%;
-        height: 12px;
+        height: 7%;
         margin-left: 7%;
     }
 
@@ -501,30 +523,47 @@ body {
         background-color: white;
         margin-right: 1%;
         float: left;
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);  
+    }
+
+    .team-slider {
+        display: none;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+        .team-div > .team {
+            width: 25%;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) and (max-height: 768px) {
+        .team-div > .team {
+            width: 17%;
+        }
+    }
+
+    @media only screen and (max-width:600px) { /* For phones */
+        .content {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+            grid-template-rows: 1.15fr 1.15fr 1.5fr 1.15fr;
+            grid-template-areas: "teams"
+                                "latest-matches"
+                                "league-table"
+                                "twitter"
+        }
+
+        .team-div > .team {
+            width: 40%;
+        }
     }
 
     .latest-matches {
         grid-area: latest-matches;
-    }
-
-    .latest-matches > p {
-        margin-left: 10%;
-        letter-spacing: 4px;
-        font-size: 13px;
-        position: relative;
-    }
-
-    .latest-matches > p > span:before {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 2px;
-        border: 1px solid #f1c40f;
-        background: #f1c40f;
-        border-radius: 15px;
-        right: 100%;
-        margin-right: 1%;
-        margin-top: 8px;
     }
 
     .latest-matches > .match {
@@ -679,20 +718,7 @@ body {
 
     .content-news {
         grid-area: content-news;
-        border: 1px solid green;
-
-    }
-
-    @media only screen and (max-height:800px) {
-        .teams > .team {
-            width: 18%;
-            height: 55%;
-        }
-
-        .latest-matches > .match {
-            height: 55%;
-            width: 43%;
-        }
+        border: 1px solid red;
     }
 
 /* Footer */

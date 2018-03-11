@@ -1,0 +1,12 @@
+CREATE TABLE teams (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name text NOT NULL,
+    shortname text NOT NULL,
+    result text NOT NULL
+)
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Next Generation', 'ng', '69-1-1');
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Bears', 'bears', '9-12-1');
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Chefs', 'chefs', '4-20-16');
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Natural Talent', 'nt', '1-2-69');
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Phoenix', 'phx', '5-22-20');
+INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Vita Mia', 'bs', '0-0-100');
