@@ -534,35 +534,6 @@ body {
         display: none;
     }
 
-
-    @media only screen and (max-width: 1024px) {
-        .team-div > .team {
-            width: 25%;
-        }
-    }
-
-    @media only screen and (max-width: 1024px) and (max-height: 768px) {
-        .team-div > .team {
-            width: 17%;
-        }
-    }
-
-    @media only screen and (max-width:600px) { /* For phones */
-        .content {
-            grid-template-columns: 1fr;
-            grid-row-gap: 20px;
-            grid-template-rows: 1.15fr 1.15fr 1.5fr 1.15fr;
-            grid-template-areas: "teams"
-                                "latest-matches"
-                                "league-table"
-                                "twitter"
-        }
-
-        .team-div > .team {
-            width: 40%;
-        }
-    }
-
     .latest-matches {
         grid-area: latest-matches;
     }
@@ -655,6 +626,46 @@ body {
 
     .matches-slider {
         display: none;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .team-div > .team {
+            width: 25%;
+        }
+
+        .match {
+            width: 89%;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) and (max-height: 768px) {
+        .team-div > .team {
+            width: 17%;
+        }
+
+        .match {
+            width: 41%;
+        }
+    }
+
+    @media only screen and (max-width:600px) { /* For phones */
+        .content {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+            grid-template-rows: 1.15fr 1.15fr 1.5fr 1.15fr;
+            grid-template-areas: "teams"
+                                "latest-matches"
+                                "league-table"
+                                "twitter"
+        }
+
+        .team-div > .team {
+            width: 40%;
+        }
+
+        .match {
+            width: 87%;
+        }
     }
 
     .league-table {
