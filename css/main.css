@@ -520,7 +520,8 @@ body {
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        background-color: white;
+        background-color: #666666;
+        border: 1px solid black;
         margin-right: 1%;
         float: left;
         cursor: pointer;
@@ -686,6 +687,12 @@ body {
         margin-right: 1%;
         margin-top: 8px;
     } */
+
+    .active-button {
+        /* Changes the style of the button which is selected */
+        background-color: #f1c40f;
+        border: 1px solid black;
+    }
 
     .twitter {
         grid-area: twitter;

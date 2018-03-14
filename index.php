@@ -103,8 +103,13 @@
                     }
 
                     echo "<div class='pagination'>";
-                    for ($k=1; $k <= $number_of_sliders; $k++) { 
-                        echo "<div class='page' onclick='changeDiv($k)'></div>";
+                    for ($k=1; $k <= $number_of_sliders; $k++) {
+                        if ($k == 1) {
+                            echo "<div class='page active-button' onclick='changeDiv($k)'></div>";
+                        }
+                        else {
+                            echo "<div class='page' onclick='changeDiv($k)'></div>";
+                        }
                     }
                     echo "</div>";
                 ?>

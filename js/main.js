@@ -14,5 +14,10 @@ function showDivs(n) {
         x[i].style.display = "none";  
     }
 
-    x[slideIndex-1].style.display = "block";  
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].className = "page";  
+    }  
+
+    x[slideIndex-1].style.display = "block";
+    buttons[slideIndex-1].className = "page active-button"
 }
