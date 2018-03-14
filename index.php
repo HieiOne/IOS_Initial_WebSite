@@ -70,6 +70,7 @@
 
         <!-- CONTENT -->
         <div class="content">
+            <!-- TEAMS -->
             <div class="teams">
                 <div class="title"><p><span>TEAMS</span></p></div>
                 <?php
@@ -102,45 +103,63 @@
                         echo "</div>";
                     }
 
-                    echo "<div class='pagination'>";
+                    echo "<div id='teams-pagination' class='pagination'>";
                     for ($k=1; $k <= $number_of_sliders; $k++) {
                         if ($k == 1) {
-                            echo "<div class='page active-button' onclick='changeDiv($k)'></div>";
+                            echo "<div class='page active-button' onclick='changeDiv($k, 0, 0)'></div>";
                         }
                         else {
-                            echo "<div class='page' onclick='changeDiv($k)'></div>";
+                            echo "<div class='page' onclick='changeDiv($k, 0, 0)'></div>";
                         }
                     }
                     echo "</div>";
                 ?>
             </div>
 
-
-
-
-
+            <!-- LATEST MATCHES -->
             <div class="latest-matches">
                 <div class="title"><p><span>LATEST MATCHES</span></p></div>
-                <div class="match">
-                    <div class="match-team-home">
-                        <div class="match-team-image"><img src="./img/team_logos/ng.png"></div>
-                        <div class="match-team-name"><p>NEXT GENERATION</p></div>
-                    </div>
-                    <div class="match-info">
-                        <div class="match-score"><p>2-5</p></div>
-                        <div class="match-date"><p>10/12/2018</p></div>
-                    </div>
-                    <div class="match-team-away">
-                        <div class="match-team-image"><img src="./img/team_logos/ng.png"></div>
-                        <div class="match-team-name"><p>NEXT GENERATIONNNNNNNNNN</p></div>
-                    </div>
-                </div>
-                <div class="match"></div>
+                <?php
+                    $query = "SELECT * FROM latestmatches";
+                    $number_of_matches = floor($number_of_teams_slider/2); //The quantity of matches per slider we will show
+                    $number_of_sliders = ceil(mysqli_num_rows(mysqli_query($db,$query))/$number_of_matches);
+                    
+                    for ($i=0; $i < $number_of_sliders; $i++) {
+                        echo "<div class='matches-div matches-slider'>";
+                        $first_result = $i*$number_of_matches;
+                        $query_field = "SELECT * FROM latestmatches LIMIT "."$first_result,"."$number_of_matches";
+                        $result_field = mysqli_query($db,$query_field);
+                        
+                        while ($match = mysqli_fetch_array($result_field)) {
+                            echo "<div class='match'>";
+                                echo "<div class='match-team-home'>";
+                                    echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                    echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
+                                echo "</div>";
+                                echo "<div class='match-info'>";
+                                    echo "<div class='match-score'><p>$match[score]</p></div>";
+                                    echo "<div class='match-date'><p>$match[match_date]</p></div>";
+                                echo "</div>";
+                                echo "<div class='match-team-away'>";
+                                    echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                    echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
+                                echo "</div>";
+                            echo "</div>";
+                        }
+                        echo "</div>";
+                    }
 
-                <div class="pagination">
-                        <div class="page" onclick=""></div>
-                        <div class="page" onclick=""></div>
-                </div>
+                    echo "<div id='latest-matches-pagination' class='pagination'>";
+                    for ($k=1; $k <= $number_of_sliders; $k++) {
+                        if ($k == 1) {
+                            echo "<div class='page active-button' onclick='changeDiv($k, 1, 1)'></div>";
+                        }
+                        else {
+                            echo "<div class='page' onclick='changeDiv($k, 1, 1)'></div>";
+                        }
+                    }
+                    echo "</div>";
+                ?>
             </div>
 
             <div class="league-table">
@@ -170,5 +189,8 @@
     </div>
 
     <script src="js/main.js"></script>
+    <?php
+        mysqli_close($db);
+    ?>
 </body>
 </html>

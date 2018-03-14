@@ -10,3 +10,20 @@ INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Chefs',
 INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Natural Talent', 'nt', '1-2-69');
 INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Phoenix', 'phx', '5-22-20');
 INSERT INTO `teams` (`id`, `name`, `shortname`, `result`) VALUES (NULL, 'Vita Mia', 'vm', '0-0-100');
+
+
+
+CREATE TABLE latestmatches (
+	id int PRIMARY KEY AUTO_INCREMENT,
+	home_team text NOT NULL,
+	home_team_shortname text NOT NULL,
+	score text NOT NULL,
+	match_date DATE,
+	away_team text NOT NULL,
+	away_team_shortname text NOT NULL
+)
+
+INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Next Generation', 'ng', '2-5', '2018-1-15', 'Phoenix', 'phx');
+INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Bears', 'bears', '5-5', '2018-1-15', 'Phoenix', 'phx');
+INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Next Generation', 'ng', '10-5', '2018-1-15', 'Phoenix', 'phx');
+INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Chefs', 'chefs', '2-5', '2018-1-15', 'Vita Mia', 'vm');

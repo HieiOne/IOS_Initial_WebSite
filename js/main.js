@@ -1,15 +1,18 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = [1,1];
+var sliders = ["team-slider", "matches-slider"];
+var pagination = ["teams-pagination", "latest-matches-pagination"];
+showDivs(1, 0, 0);
+showDivs(1, 1, 1);
 
-function changeDiv(n) {
-    showDivs(slideIndex = n);
+function changeDiv(n, slider, paginat) {
+    showDivs(slideIndex[slider] = n, slider, paginat);
 }
 
-function showDivs(n) {
+function showDivs(n, slider, paginat) {
     var i;
-    var x = document.getElementsByClassName("team-slider");
-    var buttons = document.getElementsByClassName("page");
-    
+    var x = document.getElementsByClassName(sliders[slider]);
+    var buttons = document.getElementById(pagination[paginat]).querySelectorAll(".page");
+
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
     }
@@ -18,6 +21,6 @@ function showDivs(n) {
         buttons[i].className = "page";  
     }  
 
-    x[slideIndex-1].style.display = "block";
-    buttons[slideIndex-1].className = "page active-button"
+    x[slideIndex[slider]-1].style.display = "block";
+    buttons[slideIndex[slider]-1].className = "page active-button"
 }
