@@ -13,6 +13,8 @@ function showDivs(n, slider, paginat) {
     var x = document.getElementsByClassName(sliders[slider]);
     var buttons = document.getElementById(pagination[paginat]).querySelectorAll(".page");
 
+    x.className += "fadeaway";
+
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
     }

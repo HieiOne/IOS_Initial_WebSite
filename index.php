@@ -89,7 +89,7 @@
                     $number_of_sliders = ceil(mysqli_num_rows(mysqli_query($db,$query))/$number_of_teams_slider);
                     
                     for ($i=0; $i < $number_of_sliders; $i++) {
-                        echo "<div class='team-div team-slider'>";
+                        echo "<div class='team-div team-slider fade'>";
                         $first_result = $i*$number_of_teams_slider;
                         $query_field = "SELECT * FROM teams LIMIT "."$first_result,"."$number_of_teams_slider";
                         $result_field = mysqli_query($db,$query_field);
@@ -125,7 +125,7 @@
                     $number_of_sliders = ceil(mysqli_num_rows(mysqli_query($db,$query))/$number_of_matches);
                     
                     for ($i=0; $i < $number_of_sliders; $i++) {
-                        echo "<div class='matches-div matches-slider'>";
+                        echo "<div class='matches-div matches-slider fade'>";
                         $first_result = $i*$number_of_matches;
                         $query_field = "SELECT * FROM latestmatches LIMIT "."$first_result,"."$number_of_matches";
                         $result_field = mysqli_query($db,$query_field);

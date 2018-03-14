@@ -628,6 +628,25 @@ body {
         display: none;
     }
 
+    /* Fade effect */
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+      
+    @-webkit-keyframes fade {
+        from {opacity: .3} 
+        to {opacity: 1}
+    }
+      
+    @keyframes fade {
+        from {opacity: .3} 
+        to {opacity: 1}
+    }
+
     @media only screen and (max-width: 1024px) {
         .team-div > .team {
             width: 25%;
