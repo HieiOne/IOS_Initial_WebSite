@@ -163,12 +163,46 @@
             </div>
 
             <div class="league-table">
-                <!-- <p><span>LEAGUE TABLE</span></p> -->
-                <table>
-                    <th><span>LEAGUE TABLE</span></th>
-                    <th><span>GOALS</span></th>
-                    <th><span>ASSISTS</span></th>
-                </table>
+                <div class="title"><p><span class="purple">LEAGUE TABLE & STATS</span></p></div>
+                <div class="league-table-div">
+                    <table>
+                        <tr>
+                            <th>POS</th>
+                            <th>TEAM</th>
+                            <th>PLD</th>
+                            <th>WON</th>
+                            <th>DRAWN</th>
+                            <th>LOST</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                        </tr>
+                        <?php
+                            $query_league = "SELECT * FROM `leaguetable` ORDER BY won*3+drawn DESC, goalsfor-goalsagainst DESC";
+                            $result = mysqli_query($db, $query_league);
+                            $pos = 1;
+                            while ($team = mysqli_fetch_array($result)) {
+                                $gd = $team['goalsfor']-$team['goalsagainst'];
+                                $points = $team['won']*3+$team['drawn'];
+                                echo "<tr>";
+                                echo "<td>$pos</td>";
+                                echo "<td>$team[team]</td>";
+                                echo "<td>$team[pld]</td>";
+                                echo "<td>$team[won]</td>";
+                                echo "<td>$team[drawn]</td>";
+                                echo "<td>$team[lost]</td>";
+                                echo "<td>$team[goalsfor]</td>";
+                                echo "<td>$team[goalsagainst]</td>";
+                                echo "<td>$gd</td>";
+                                echo "<td>$points</td>";
+                                echo "</tr>";
+                                $pos++;
+                            }
+                        ?>                
+                    </table>
+                </div>
+                
                 <div class="pagination">
                         <div class="page"></div>
                         <div class="page"></div>

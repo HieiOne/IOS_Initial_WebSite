@@ -27,3 +27,22 @@ INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `
 INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Bears', 'bears', '5-5', '2018-1-15', 'Phoenix', 'phx');
 INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Next Generation', 'ng', '10-5', '2018-1-15', 'Phoenix', 'phx');
 INSERT INTO `latestmatches`(`id`, `home_team`, `home_team_shortname`, `score`, `match_date`, `away_team`, `away_team_shortname`) VALUES (NULL, 'Chefs', 'chefs', '2-5', '2018-1-15', 'Vita Mia', 'vm');
+
+
+CREATE TABLE leaguetable (
+	id int PRIMARY KEY AUTO_INCREMENT,
+	team text NOT NULL,
+	pld int NOT NULL,
+	won int NOT NULL,
+	drawn int NOT NULL,
+	lost int NOT NULL,
+	goalsfor int NOT NULL,
+	goalsagainst int NOT NULL
+)
+
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('1', 'Next Generation', '19', '17', '1', '1', '36', '15');
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('2', 'Bears', '19', '13', '5', '1', '36', '35');
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('3', 'Chefs', '19', '1', '1', '17', '66', '75');
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('4', 'Vita Mia', '19', '7', '11', '1', '36', '45');
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('5', 'Natural Talent', '19', '5', '11', '4', '76', '15');
+INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('6', 'Phoenix', '19', '0', '0', '19', '5', '90');
