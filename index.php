@@ -164,7 +164,7 @@
 
             <div class="league-table">
                 <div class="title"><p><span class="purple">LEAGUE TABLE & STATS</span></p></div>
-                <div class="league-table-div tables-slider">
+                <div class="league-table-div tables-slider fade">
                     <table class="table-league">
                         <tr>
                             <th>POS</th>
@@ -202,7 +202,7 @@
                         ?>                
                     </table>
                 </div>
-                <div class="league-table-div tables-slider">
+                <div class="league-table-div tables-slider fade">
                     <table class="table-stats">
                         <th colspan="2">GOALS</th>
                         <tr>
