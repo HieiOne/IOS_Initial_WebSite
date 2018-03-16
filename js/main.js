@@ -1,8 +1,9 @@
-var slideIndex = [1,1];
-var sliders = ["team-slider", "matches-slider"];
-var pagination = ["teams-pagination", "latest-matches-pagination"];
+var slideIndex = [1,1,1];
+var sliders = ["team-slider", "matches-slider", "tables-slider"];
+var pagination = ["teams-pagination", "latest-matches-pagination", "tables-pagination"];
 showDivs(1, 0, 0);
 showDivs(1, 1, 1);
+showDivs(1, 2, 2);
 
 function changeDiv(n, slider, paginat) {
     showDivs(slideIndex[slider] = n, slider, paginat);

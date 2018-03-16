@@ -164,8 +164,8 @@
 
             <div class="league-table">
                 <div class="title"><p><span class="purple">LEAGUE TABLE & STATS</span></p></div>
-                <div class="league-table-div">
-                    <table>
+                <div class="league-table-div tables-slider">
+                    <table class="table-league">
                         <tr>
                             <th>POS</th>
                             <th>TEAM</th>
@@ -202,10 +202,220 @@
                         ?>                
                     </table>
                 </div>
+                <div class="league-table-div tables-slider">
+                    <table class="table-stats">
+                        <th colspan="2">GOALS</th>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        
+                    </table>
+                    <table class="table-stats">
+                        <th colspan="2">ASSISTS</th>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        
+                    </table>
+                    <table class="table-stats">
+                        <th colspan="2">PASSES</th>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        
+                    </table>
+                    <table class="table-stats">
+                        <th colspan="2">SAVES</th>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>64</td>
+                        </tr>
+                        
+                    </table>
+                </div>
                 
-                <div class="pagination">
-                        <div class="page"></div>
-                        <div class="page"></div>
+                <div id="tables-pagination" class="pagination">
+                        <div class="page active-button" onclick='changeDiv(1, 2, 2)'></div>
+                        <div class="page" onclick='changeDiv(2, 2, 2)'></div>
                 </div>
             </div>
 

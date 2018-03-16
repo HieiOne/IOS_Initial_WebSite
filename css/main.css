@@ -380,6 +380,10 @@ body {
                 opacity: 0.2;
             }
 
+            .images > a > img:hover {
+                opacity: 0.9;
+            }
+
             .video {
                 opacity: initial;
                 grid-area: video;
@@ -661,7 +665,7 @@ body {
         border: 1px solid black;
     }
 
-    .league-table-div > table {
+    .table-league {
         margin-left: 7%;
         background-color: #161618;
         width: 91%;
@@ -672,6 +676,7 @@ body {
         overflow-y: scroll;
     }
 
+    
     tr:hover:not(:first-child) {
         background: #1B1A1A;
     }
@@ -679,13 +684,33 @@ body {
     tr:nth-child(2) {
         color: #f1c40f;
     }
+    
+    .table-stats {
+        margin-left: 3%;
+        background-color: #161618;
+        width: 21%;
+        height: 100%;
+        text-align: center;
+        cursor: default;
+        letter-spacing: 2px;
+        overflow-y: scroll;
+        float: left;
+    }
 
-    td > img {
+    .table-stats tr:nth-child(2) {
+        color: #6f5fbf;
+    }
+
+    .tables-slider {
+        display: none;
+    }
+
+    /* td > img {
         height: 30px;
         width: 30px;
         vertical-align: middle;
         margin-right: 3%;
-    }
+    } */
 
     /* Fade effect */
 
