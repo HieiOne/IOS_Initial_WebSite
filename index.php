@@ -18,8 +18,6 @@
             echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
             exit;
         }
-
-        require_once 'libs/MobileDetect/Mobile_Detect.php';
     ?>
     <div id="main">
         <!-- HEADER -->
@@ -75,42 +73,15 @@
                 <div class="title"><p><span>TEAMS</span></p></div>
                 <?php
                     $query = "SELECT * FROM teams";
-                    $detect = new Mobile_Detect;
-
-                    if ($detect -> isTablet()) {
-                        $number_of_teams_slider = 3;
-                    }
-                    elseif ($detect -> isMobile() && ! $detect -> isTablet()) {
-                        $number_of_teams_slider = 2;
-                    }
-                    else {
-                        $number_of_teams_slider = 4;
-                    }
-                    $number_of_sliders = ceil(mysqli_num_rows(mysqli_query($db,$query))/$number_of_teams_slider);
+                    $result = mysqli_query($db,$query);
                     
-                    for ($i=0; $i < $number_of_sliders; $i++) {
-                        echo "<div class='team-div team-slider fade'>";
-                        $first_result = $i*$number_of_teams_slider;
-                        $query_field = "SELECT * FROM teams LIMIT "."$first_result,"."$number_of_teams_slider";
-                        $result_field = mysqli_query($db,$query_field);
-                        while ($team = mysqli_fetch_array($result_field)) {
-                            echo "<div class='team'>";
-                                echo "<div class='team-image'><img src='./img/team_logos/$team[shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                                echo "<div class='team-name'><p>$team[name]</p></div>";
-                                echo "<div class='team-result'><p>$team[result]</p></div>";
-                            echo "</div>";
-                        }
+                    echo "<div class='team-div'>";
+                    while ($team = mysqli_fetch_array($result)) {
+                        echo "<div class='team'>";
+                            echo "<div class='team-image'><img src='./img/team_logos/$team[shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                            echo "<div class='team-name'><p>$team[name]</p></div>";
+                            echo "<div class='team-result'><p>$team[result]</p></div>";
                         echo "</div>";
-                    }
-
-                    echo "<div id='teams-pagination' class='pagination'>";
-                    for ($k=1; $k <= $number_of_sliders; $k++) {
-                        if ($k == 1) {
-                            echo "<div class='page active-button' onclick='changeDiv($k, 0, 0)'></div>";
-                        }
-                        else {
-                            echo "<div class='page' onclick='changeDiv($k, 0, 0)'></div>";
-                        }
                     }
                     echo "</div>";
                 ?>
@@ -121,42 +92,24 @@
                 <div class="title"><p><span>LATEST MATCHES</span></p></div>
                 <?php
                     $query = "SELECT * FROM latestmatches";
-                    $number_of_matches = floor($number_of_teams_slider/2); //The quantity of matches per slider we will show
-                    $number_of_sliders = ceil(mysqli_num_rows(mysqli_query($db,$query))/$number_of_matches);
-                    
-                    for ($i=0; $i < $number_of_sliders; $i++) {
-                        echo "<div class='matches-div matches-slider fade'>";
-                        $first_result = $i*$number_of_matches;
-                        $query_field = "SELECT * FROM latestmatches LIMIT "."$first_result,"."$number_of_matches";
-                        $result_field = mysqli_query($db,$query_field);
-                        
-                        while ($match = mysqli_fetch_array($result_field)) {
-                            echo "<div class='match'>";
-                                echo "<div class='match-team-home'>";
-                                    echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                                    echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
-                                echo "</div>";
-                                echo "<div class='match-info'>";
-                                    echo "<div class='match-score'><p>$match[score]</p></div>";
-                                    echo "<div class='match-date'><p>$match[match_date]</p></div>";
-                                echo "</div>";
-                                echo "<div class='match-team-away'>";
-                                    echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                                    echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
-                                echo "</div>";
-                            echo "</div>";
-                        }
-                        echo "</div>";
-                    }
+                    echo "<div class='matches-div'>";
+                    $result = mysqli_query($db,$query);
 
-                    echo "<div id='latest-matches-pagination' class='pagination'>";
-                    for ($k=1; $k <= $number_of_sliders; $k++) {
-                        if ($k == 1) {
-                            echo "<div class='page active-button' onclick='changeDiv($k, 1, 1)'></div>";
-                        }
-                        else {
-                            echo "<div class='page' onclick='changeDiv($k, 1, 1)'></div>";
-                        }
+                    while ($match = mysqli_fetch_array($result)) {
+                        echo "<div class='match'>";
+                            echo "<div class='match-team-home'>";
+                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
+                            echo "</div>";
+                            echo "<div class='match-info'>";
+                                echo "<div class='match-score'><p>$match[score]</p></div>";
+                                echo "<div class='match-date'><p>$match[match_date]</p></div>";
+                            echo "</div>";
+                            echo "<div class='match-team-away'>";
+                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
+                            echo "</div>";
+                        echo "</div>";
                     }
                     echo "</div>";
                 ?>
@@ -164,7 +117,7 @@
 
             <div class="league-table">
                 <div class="title"><p><span class="purple">LEAGUE TABLE & STATS</span></p></div>
-                <div class="league-table-div tables-slider fade">
+                <div class="league-table-div">
                     <table class="table-league">
                         <tr>
                             <th>POS</th>
@@ -201,18 +154,8 @@
                             }
                         ?>                
                     </table>
-                </div>
-                <div class="league-table-div tables-slider fade">
                     <table class="table-stats">
                         <th colspan="2">GOALS</th>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
                         <tr>
                             <td>Aryan</td>
                             <td>64</td>
@@ -297,14 +240,7 @@
                             <td>Aryan</td>
                             <td>64</td>
                         </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
+
                         
                     </table>
                     <table class="table-stats">
@@ -349,14 +285,7 @@
                             <td>Aryan</td>
                             <td>64</td>
                         </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
+
                         
                     </table>
                     <table class="table-stats">
@@ -401,22 +330,12 @@
                             <td>Aryan</td>
                             <td>64</td>
                         </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td>Aryan</td>
-                            <td>64</td>
-                        </tr>
+
                         
                     </table>
                 </div>
                 
-                <div id="tables-pagination" class="pagination">
-                        <div class="page active-button" onclick='changeDiv(1, 2, 2)'></div>
-                        <div class="page" onclick='changeDiv(2, 2, 2)'></div>
-                </div>
+
             </div>
 
             <div class="twitter">

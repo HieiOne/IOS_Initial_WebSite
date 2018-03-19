@@ -186,7 +186,7 @@ body {
                 box-shadow: 0px 0px 10px #fff;
             }
 
-            .active:after {
+            .buttons > .active:after {
                 content: "";
                 position: absolute;
                 bottom: 0;
@@ -197,7 +197,7 @@ body {
                 box-shadow: 0px 0px 10px #f1c40f;
             }
 
-            .active > div > h1 {
+            .buttons > .active > div > h1 {
                 color: whitesmoke
             }
 
@@ -449,7 +449,7 @@ body {
         margin-top: 8px;
     }
 
-    .pagination {
+    /* .pagination {
         clear: both;
         width: 50%;
         height: 7%;
@@ -468,25 +468,29 @@ body {
         position: relative;
         top: 50%;
         transform: translateY(-50%);  
-    }
+    } */
 
     .team-div {
-        width: 100%;
-        height: 84%;
+        width: 94%;
+        height: 92%;
+        overflow: auto;
+        white-space: nowrap;
+        margin-left: 4%;
     }
 
     
     .team-div > .team {
-        margin-left: 7%;
+        display: inline-block;
         background-color: #161618;
-        width: 15%;
+        width: 16%;
         height: 90%;
-        float: left;
         margin-bottom: 1%;
         position: relative;
         top: 50%;
         transform: translateY(-50%);  
+        margin-right: 7%;
     }
+
 
     .team > .team-image {
         width: 100%;
@@ -534,25 +538,24 @@ body {
         text-overflow: ellipsis;
     }
 
-    .team-slider {
-        display: none;
-    }
-
     .latest-matches {
         grid-area: latest-matches;
     }
 
     .matches-div {
-        width: 100%;
-        height: 84%;
+        width: 94%;
+        height: 92%;
+        overflow: auto;
+        white-space: nowrap;
+        margin-left: 4%;
     }
 
     .match {
-        margin-left: 7%;
+        display: inline-block;
+        margin-right: 7%;
         height: 90%;
-        width: 37%;
+        width: 42%;
         background-color: #161618;
-        float: left;
         position: relative;
         top: 50%;
         transform: translateY(-50%);  
@@ -639,10 +642,6 @@ body {
         font-size: 12px;
     }
 
-    .matches-slider {
-        display: none;
-    }
-
     .league-table {
         grid-area: league-table
     }
@@ -654,9 +653,11 @@ body {
     }
 
     .league-table-div {
-        width: 100%;
-        height: 84%;
+        width: 94%;
+        height: 92%;
         overflow: auto;
+        white-space: nowrap;
+        margin-left: 4%;
     }
 
     .active-button {
@@ -666,7 +667,7 @@ body {
     }
 
     .table-league {
-        margin-left: 7%;
+        display: inline-table;
         background-color: #161618;
         width: 91%;
         height: 100%;
@@ -686,54 +687,24 @@ body {
     }
     
     .table-stats {
+        display: inline-table;
         margin-left: 3%;
         background-color: #161618;
         width: 21%;
-        height: 100%;
+        height: 92%;
         text-align: center;
         cursor: default;
         letter-spacing: 2px;
         overflow-y: scroll;
-        float: left;
     }
 
     .table-stats tr:nth-child(2) {
         color: #6f5fbf;
     }
 
-    .tables-slider {
-        display: none;
-    }
-
-    /* td > img {
-        height: 30px;
-        width: 30px;
-        vertical-align: middle;
-        margin-right: 3%;
-    } */
-
-    /* Fade effect */
-
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
-        animation-name: fade;
-        animation-duration: 2s;
-    }
-      
-    @-webkit-keyframes fade {
-        from {opacity: .3} 
-        to {opacity: 1}
-    }
-      
-    @keyframes fade {
-        from {opacity: .3} 
-        to {opacity: 1}
-    }
-
     @media only screen and (max-width: 1024px) { /* Tablets */
         .team-div > .team {
-            width: 25%;
+            width: 35%;
         }
 
         .match {
@@ -743,7 +714,8 @@ body {
 
     @media only screen and (max-width: 1024px) and (max-height: 768px) { /* 800x600 and 1024x768*/
         .team-div > .team {
-            width: 17%;
+            height: 85%;
+            width: 20%;
         }
 
         .match {
@@ -762,16 +734,22 @@ body {
                                 "twitter"
         }
 
+        .matches-div {
+            margin-left: 0%;
+        }
+
+        .team-div {
+            margin-left: 0%
+        }
+
         .team-div > .team {
-            width: 40%;
+            width: 25%;
         }
 
         .match {
             width: 87%;
         }
     }
-
-
 
     .twitter {
         grid-area: twitter;
@@ -830,4 +808,26 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: whitesmoke !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border: 2px solid #28282a;
+    background: #161618; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
