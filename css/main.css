@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: #1B1A1A;
 }
 
 /* Grid */
@@ -12,6 +13,7 @@ body {
     display: grid;
     min-height: 250vh;
     width: 100%; /* Change this to 100% later */
+    min-width: 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
     grid-template-rows: 0.8fr 1.8fr 80px;
@@ -471,7 +473,7 @@ body {
     } */
 
     .team-div {
-        width: 94%;
+        width: 92%;
         height: 92%;
         overflow: auto;
         white-space: nowrap;
@@ -480,6 +482,7 @@ body {
 
     
     .team-div > .team {
+        min-width: 0;
         display: inline-block;
         background-color: #161618;
         width: 16%;
@@ -691,7 +694,7 @@ body {
         margin-left: 3%;
         background-color: #161618;
         width: 21%;
-        height: 92%;
+        height: 90%;
         text-align: center;
         cursor: default;
         letter-spacing: 2px;
@@ -727,7 +730,7 @@ body {
         .content {
             grid-template-columns: 1fr;
             grid-row-gap: 20px;
-            grid-template-rows: 1.15fr 1.15fr 1.5fr 1.15fr;
+            grid-template-rows: 1fr 1.15fr 1.5fr 1.15fr;
             grid-template-areas: "teams"
                                 "latest-matches"
                                 "league-table"
@@ -738,12 +741,20 @@ body {
             margin-left: 0%;
         }
 
+        .teams {
+            grid-area: teams;
+            max-width: 55vmax;
+        }
+
         .team-div {
-            margin-left: 0%
+            position: relative;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .team-div > .team {
-            width: 25%;
+            width: 30%;
         }
 
         .match {

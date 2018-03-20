@@ -88,30 +88,30 @@
             </div>
 
             <!-- LATEST MATCHES -->
-            <div class="latest-matches">
+            <!-- <div class="latest-matches">
                 <div class="title"><p><span>LATEST MATCHES</span></p></div>
                 <?php
-                    $query = "SELECT * FROM latestmatches";
-                    echo "<div class='matches-div'>";
-                    $result = mysqli_query($db,$query);
+                    // $query = "SELECT * FROM latestmatches";
+                    // echo "<div class='matches-div'>";
+                    // $result = mysqli_query($db,$query);
 
-                    while ($match = mysqli_fetch_array($result)) {
-                        echo "<div class='match'>";
-                            echo "<div class='match-team-home'>";
-                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                                echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
-                            echo "</div>";
-                            echo "<div class='match-info'>";
-                                echo "<div class='match-score'><p>$match[score]</p></div>";
-                                echo "<div class='match-date'><p>$match[match_date]</p></div>";
-                            echo "</div>";
-                            echo "<div class='match-team-away'>";
-                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                                echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
-                            echo "</div>";
-                        echo "</div>";
-                    }
-                    echo "</div>";
+                    // while ($match = mysqli_fetch_array($result)) {
+                    //     echo "<div class='match'>";
+                    //         echo "<div class='match-team-home'>";
+                    //             echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                    //             echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
+                    //         echo "</div>";
+                    //         echo "<div class='match-info'>";
+                    //             echo "<div class='match-score'><p>$match[score]</p></div>";
+                    //             echo "<div class='match-date'><p>$match[match_date]</p></div>";
+                    //         echo "</div>";
+                    //         echo "<div class='match-team-away'>";
+                    //             echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                    //             echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
+                    //         echo "</div>";
+                    //     echo "</div>";
+                    // }
+                    // echo "</div>";
                 ?>
             </div>
 
@@ -132,26 +132,26 @@
                             <th>PTS</th>
                         </tr>
                         <?php
-                            $query_league = "SELECT * FROM `leaguetable` ORDER BY won*3+drawn DESC, goalsfor-goalsagainst DESC";
-                            $result = mysqli_query($db, $query_league);
-                            $pos = 1;
-                            while ($team = mysqli_fetch_array($result)) {
-                                $gd = $team['goalsfor']-$team['goalsagainst'];
-                                $points = $team['won']*3+$team['drawn'];
-                                echo "<tr>";
-                                echo "<td>$pos</td>";
-                                echo "<td>$team[team]</td>";
-                                echo "<td>$team[pld]</td>";
-                                echo "<td>$team[won]</td>";
-                                echo "<td>$team[drawn]</td>";
-                                echo "<td>$team[lost]</td>";
-                                echo "<td>$team[goalsfor]</td>";
-                                echo "<td>$team[goalsagainst]</td>";
-                                echo "<td>$gd</td>";
-                                echo "<td>$points</td>";
-                                echo "</tr>";
-                                $pos++;
-                            }
+                            // $query_league = "SELECT * FROM `leaguetable` ORDER BY won*3+drawn DESC, goalsfor-goalsagainst DESC";
+                            // $result = mysqli_query($db, $query_league);
+                            // $pos = 1;
+                            // while ($team = mysqli_fetch_array($result)) {
+                            //     $gd = $team['goalsfor']-$team['goalsagainst'];
+                            //     $points = $team['won']*3+$team['drawn'];
+                            //     echo "<tr>";
+                            //     echo "<td>$pos</td>";
+                            //     echo "<td>$team[team]</td>";
+                            //     echo "<td>$team[pld]</td>";
+                            //     echo "<td>$team[won]</td>";
+                            //     echo "<td>$team[drawn]</td>";
+                            //     echo "<td>$team[lost]</td>";
+                            //     echo "<td>$team[goalsfor]</td>";
+                            //     echo "<td>$team[goalsagainst]</td>";
+                            //     echo "<td>$gd</td>";
+                            //     echo "<td>$points</td>";
+                            //     echo "</tr>";
+                            //     $pos++;
+                            // }
                         ?>                
                     </table>
                     <table class="table-stats">
@@ -333,10 +333,10 @@
 
                         
                     </table>
-                </div>
+                </div> -->
                 
 
-            </div>
+            <!-- </div> -->
 
             <div class="twitter">
                 <div class="title"><p><span>IOS INSIDER</span></p></div>
@@ -347,7 +347,7 @@
         </div>
         <!-- FOOTER -->
         <div class="footer">
-            <h1>©2018 - IOSoccer<br>Designed by Quincy & Developed by Hiei</h1>
+            <h1>©2018 - IOSoccer</h1>
         </div>
     </div>
 
