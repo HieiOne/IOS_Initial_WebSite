@@ -146,9 +146,9 @@ body {
             .buttons {
                     grid-area: buttons;
                     display: grid;
-                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-columns: repeat(6, 1fr);
                     grid-template-rows: 1fr;
-                    grid-template-areas: "button-news button-league button-about button-contact button-donate button-login button-signup"
+                    grid-template-areas: "button-home button-news button-league button-about button-contact button-login"
             }
 
             .buttons > a {
@@ -203,6 +203,9 @@ body {
                 color: whitesmoke
             }
 
+            #button-home {
+                grid-area: button-home;
+            }
             #button-news {
                 grid-area: button-news;
             }
@@ -212,22 +215,13 @@ body {
             #button-about {
                 grid-area: button-about;
             }
-            #button-forum {
-                grid-area: button-forum;
-            }
             #button-contact {
                 grid-area: button-contact;
-            }
-            #button-donate {
-                grid-area: button-donate;
             }
             #button-login {
                 grid-area: button-login;
             }
-            #button-signup {
-                grid-area: button-signup;
-            }
-            .signup {
+            .login {
                 border: 1px solid #f1c40f;
                 border-radius: 4px;
                 background-color: #f1c40f;

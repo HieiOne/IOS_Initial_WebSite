@@ -35,13 +35,12 @@
                 </div>
                 <div class="buttons">
                     <a><img src="./img/bars.png"></img></a>
-                    <a href="#" id="button-news" class="active"><div><h1>NEWS</h1></div></a>
-                    <a href="#" id="button-league"><div><h1>LEAGUE</h1></div></a>
+                    <a href="#" id="button-home" class="active"><div><h1>HOME</h1></div></a>
+                    <a href="#" id="button-news"><div><h1>NEWS</h1></div></a>
                     <a href="#" id="button-about"><div><h1>ABOUT</h1></div></a>
+                    <a href="#" id="button-league"><div><h1>LEAGUE</h1></div></a>
                     <a href="#" id="button-contact"><div><h1>CONTACT</h1></div></a>
-                    <a href="#" id="button-donate"><div><h1>DONATE</h1></div></a>
-                    <a href="#" id="button-login"><div><h1>LOGIN</h1></div></a>
-                    <a href="#" id="button-signup"><div><h1 class="signup">SIGNUP</h1></div></a>
+                    <a href="#" id="button-login"><div><h1 class="login">LOGIN</h1></div></a>
                 </div>
             </div>
             <!-- INTRO -->
