@@ -36,6 +36,7 @@
                 <div class="buttons">
                     <a><img src="./img/bars.png"></img></a>
                     <a href="#" id="button-news" class="active"><div><h1>NEWS</h1></div></a>
+                    <a href="#" id="button-league"><div><h1>LEAGUE</h1></div></a>
                     <a href="#" id="button-about"><div><h1>ABOUT</h1></div></a>
                     <a href="#" id="button-contact"><div><h1>CONTACT</h1></div></a>
                     <a href="#" id="button-donate"><div><h1>DONATE</h1></div></a>
@@ -88,34 +89,34 @@
             </div>
 
             <!-- LATEST MATCHES -->
-            <!-- <div class="latest-matches">
+            <div class="latest-matches">
                 <div class="title"><p><span>LATEST MATCHES</span></p></div>
                 <?php
-                    // $query = "SELECT * FROM latestmatches";
-                    // echo "<div class='matches-div'>";
-                    // $result = mysqli_query($db,$query);
+                    $query = "SELECT * FROM latestmatches";
+                    echo "<div class='matches-div'>";
+                    $result = mysqli_query($db,$query);
 
-                    // while ($match = mysqli_fetch_array($result)) {
-                    //     echo "<div class='match'>";
-                    //         echo "<div class='match-team-home'>";
-                    //             echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                    //             echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
-                    //         echo "</div>";
-                    //         echo "<div class='match-info'>";
-                    //             echo "<div class='match-score'><p>$match[score]</p></div>";
-                    //             echo "<div class='match-date'><p>$match[match_date]</p></div>";
-                    //         echo "</div>";
-                    //         echo "<div class='match-team-away'>";
-                    //             echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
-                    //             echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
-                    //         echo "</div>";
-                    //     echo "</div>";
-                    // }
-                    // echo "</div>";
+                    while ($match = mysqli_fetch_array($result)) {
+                        echo "<div class='match'>";
+                            echo "<div class='match-team-home'>";
+                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[home_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                echo "<div class='match-team-name'><p>$match[home_team]</p></div>";
+                            echo "</div>";
+                            echo "<div class='match-info'>";
+                                echo "<div class='match-score'><p>$match[score]</p></div>";
+                                echo "<div class='match-date'><p>$match[match_date]</p></div>";
+                            echo "</div>";
+                            echo "<div class='match-team-away'>";
+                                echo "<div class='match-team-image'><img src='./img/team_logos/$match[away_team_shortname].png' onerror=this.src='./img/not_available.png';></div>";
+                                echo "<div class='match-team-name'><p>$match[away_team]</p></div>";
+                            echo "</div>";
+                        echo "</div>";
+                    }
+                    echo "</div>";
                 ?>
             </div>
 
-            <div class="league-table">
+            <!-- <div class="league-table">
                 <div class="title"><p><span class="purple">LEAGUE TABLE & STATS</span></p></div>
                 <div class="league-table-div">
                     <table class="table-league">

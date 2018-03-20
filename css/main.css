@@ -146,9 +146,9 @@ body {
             .buttons {
                     grid-area: buttons;
                     display: grid;
-                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-columns: repeat(7, 1fr);
                     grid-template-rows: 1fr;
-                    grid-template-areas: "button-news button-about button-contact button-donate button-login button-signup"
+                    grid-template-areas: "button-news button-league button-about button-contact button-donate button-login button-signup"
             }
 
             .buttons > a {
@@ -205,6 +205,9 @@ body {
 
             #button-news {
                 grid-area: button-news;
+            }
+            #button-league {
+                grid-area: button-league;
             }
             #button-about {
                 grid-area: button-about;
@@ -473,7 +476,7 @@ body {
     } */
 
     .team-div {
-        width: 92%;
+        width: 94%;
         height: 92%;
         overflow: auto;
         white-space: nowrap;
@@ -482,7 +485,6 @@ body {
 
     
     .team-div > .team {
-        min-width: 0;
         display: inline-block;
         background-color: #161618;
         width: 16%;
@@ -737,13 +739,10 @@ body {
                                 "twitter"
         }
 
-        .matches-div {
-            margin-left: 0%;
-        }
-
         .teams {
             grid-area: teams;
             max-width: 55vmax;
+            /* To fix the scrollbar width */
         }
 
         .team-div {
@@ -755,6 +754,10 @@ body {
 
         .team-div > .team {
             width: 30%;
+        }
+
+        .matches-div {
+            margin-left: 4%;
         }
 
         .match {
