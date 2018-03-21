@@ -82,7 +82,7 @@
                 </div>
                 <div class="boxes">
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -90,7 +90,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO1<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -98,7 +98,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO2<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -106,7 +106,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO3<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -114,7 +114,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO4<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -122,7 +122,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO5<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -130,7 +130,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO6<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -138,7 +138,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO7<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -146,7 +146,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO8<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -154,7 +154,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO9<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>
@@ -162,7 +162,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="new">
+                        <div class="new fade">
                             <div class="new_title"><span>HOLA PUTO10<span></div>
                             <div class="new_body"><span>I will truncate text with javascript later</span></div>
                             <div class="new_author"><span>Hiei</span></div>

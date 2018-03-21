@@ -11,7 +11,6 @@ else if (w < 780) { /** Tablets */
 else {
     elements = 4;
 }
-// var elements = 4; /* To make it responsive later */
 showDivs(slideIndex);
 
 function plusDivs(n) {
