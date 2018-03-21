@@ -11,15 +11,15 @@ body {
 /* Grid */
 #main {
     display: grid;
-    min-height: 250vh;
-    width: 100%; /* Change this to 100% later */
+    min-height: 350vh; /*After everything is done change this to auto*/
+    width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
-    grid-template-rows: 0.8fr 1.8fr 80px;
+    grid-template-rows: 0.44fr 1.8fr 80px;
     grid-template-areas: "header"
-                        "content"
-                        "footer";
+                         "content"
+                         "footer";
     opacity: 0.98;
     background-color: #1B1A1A;
     color: whitesmoke;
@@ -52,7 +52,7 @@ body {
     .top-bar {
         height: 15%;
         display: grid;
-        width: 99.92%;
+        width: 100%;
         grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
         grid-template-rows: 1fr;
         grid-template-areas: "game-title search-bar buttons .";
@@ -245,6 +245,7 @@ body {
     @media only screen and (min-height:600px) { /* For screens more than 600px of height */
         .intro {
             height: 85%;
+            width: 100%;
             display: grid;
             grid-template-columns: 0.6fr 1fr;
             grid-template-rows: 0.6fr 0.5fr 0.3fr 0.5fr;
@@ -258,6 +259,7 @@ body {
     @media only screen and (max-height:600px) { /* For screens less than 600px of height */
         .intro {
             height: 85%;
+            width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
@@ -275,6 +277,7 @@ body {
     @media only screen and (max-width:600px) { /* For phones */
         .intro {
             height: 85%;
+            width: 100%;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 0.3fr 1fr 0.3fr 0.5fr;
@@ -329,10 +332,12 @@ body {
 
             .description > p {
                 padding: 0;
-                margin-left: 22.5%;
+                margin-left: 18.5%;
                 font-size: x-large;
                 letter-spacing: 1.3px;
             }
+
+
 
             .download {
                 grid-area: download;
@@ -400,6 +405,182 @@ body {
             }
 
 /* Content */
+
+.content { 
+    grid-area: content;
+    border: 1px solid #28282a;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr 0.5fr 1fr 0.1fr;
+    grid-row-gap: 15px;
+    grid-template-areas: "content-introduction"
+                         "news"
+                         "info_1"
+                         "screenshots"
+                         "info_2"
+                         "content-ending";
+}
+
+    .content > div {
+        border: 1px solid blue;
+    }
+
+    .content-introduction {
+        grid-area: content-introduction;
+    }
+    .news {
+        grid-area: news;
+    }
+    .info_1 {
+        grid-area: info_1;
+    }
+    .screenshots {
+        grid-area: screenshots;
+    }
+    .info_2 {
+        grid-area: info_2;
+    }
+    .content-ending {
+        grid-area: content-ending;
+    }
+
+    .text { /* Text of introduction and ending */
+        font-size: 14px;
+        opacity: 0.8;
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .title { /* Text of introduction and ending */
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .title > .colored { /* Text of introduction and ending */
+        color: #f1c40f;
+    }
+
+    .top {
+        position: relative;
+        height: 12%;
+        width: 80%;
+        border: 1px solid green;
+        margin: 0 auto;
+    }
+
+    .top > p {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 1%;
+        letter-spacing: 1px;
+        float: left;
+    }
+
+    .news_button {
+        height: 100%;
+        width: 20%;
+        float: right;
+    }
+
+    .news_button > div {
+        border-radius: 50%;
+        padding: 8px;
+        float: left;
+        color: #f1c40f;
+        background: #28282a;
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5%;
+        float: right;
+    }
+
+    .news_button > div:hover {
+        background-color: #555;
+    }
+
+    .boxes {
+        border: 1px solid yellow;
+        height: 88%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .new {
+        height: 80%;
+        width: 20%;
+        border: 1px solid #161618;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 2%;
+        float: left;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .new > div > span {
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    .new_title {
+        width: 90%;
+        height: 10%;
+        margin-top: 5%;
+        margin-left: 5%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .new_body {
+        width: 90%;
+        height: 60%;
+        margin-left: 5%;
+    }
+
+    .new_body > span {
+        opacity: 0.6;
+        word-wrap: break-word;
+    }
+
+    .new_author {
+        width: 90%;
+        height: 10%;
+        margin-left: 5%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .new_author > span::before {
+        content: '- ';
+    }
+
+    .new > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.1;
+    }
+
+
+
 
 /* Footer */
 .footer {

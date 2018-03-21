@@ -67,6 +67,39 @@
         </div>
 
         <!-- CONTENT -->
+        <div class="content">
+            <div class="content-introduction">
+                <p class="title">Play good <span class="colored">football</span></p>
+                <p class="text">Enjoy total footballing freedom our system allows the player to mould into any<br>sort of footballer they want to be!</p>
+            </div>
+            <div class="news">
+                <div class="top">
+                    <p>NEWS</p>
+                    <div class="news_button">
+                        <div>&#10095</div>
+                        <div class="space">&#10094</div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <div class="new"></div>
+                </div>
+            </div>
+            <div class="info_1"></div>
+            <div class="screenshots"></div>
+            <div class="info_2"></div>
+            <div class="content-ending">
+                <p class="title">We are here to have <span class="colored">fun</span>!</p>
+                <p class="text">We welcome new players and are a very friendly bunch who love to play football.<br>I hope I don't have to rework this</br></p>
+            </div>
+        </div>
 
         <!-- FOOTER -->
         <div class="footer">
