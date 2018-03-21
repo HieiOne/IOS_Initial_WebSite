@@ -76,8 +76,8 @@
                 <div class="top">
                     <p>NEWS</p>
                     <div class="news_button">
-                        <div>&#10095</div>
-                        <div class="space">&#10094</div>
+                        <div onclick="plusDivs(1)">&#10095</div>
+                        <div onclick="plusDivs(-1)" class="space">&#10094</div>
                     </div>
                 </div>
                 <div class="boxes">
@@ -89,7 +89,87 @@
                             <img src="./img/news_background.jpg">
                         </div>
                     </a>
-                    <div class="new"></div>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO1<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO2<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO3<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO4<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO5<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO6<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO7<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO8<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO9<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="new">
+                            <div class="new_title"><span>HOLA PUTO10<span></div>
+                            <div class="new_body"><span>I will truncate text with javascript later</span></div>
+                            <div class="new_author"><span>Hiei</span></div>
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+
                 </div>
             </div>
             <div class="info_1"></div>
@@ -107,8 +187,11 @@
         </div>
     </div>
 
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
     <?php
+        // CLOSING DB
         mysqli_close($db);
     ?>
 </body>
