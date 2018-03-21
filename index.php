@@ -172,9 +172,40 @@
 
                 </div>
             </div>
-            <div class="info_1"></div>
+            <div class="info_1">
+                <div class="info_left">
+                    <div class="info_picture"><img src="./img/news_background.jpg"></div>
+                    <div class="info_text">
+                        <div class="info_text_header"><span>TEAMS</span></div>
+                        <div class="info_text_body"><span>For you, the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
+                    </div>
+                </div>
+                <div class="info_right">
+                    <div class="info_text">
+                        <div class="info_text_header"><span>GAMEPLAY</span></div>
+                        <div class="info_text_body"></div>
+                    </div>
+                    <div class="info_picture"><img src="./img/news_background.jpg"> </div>
+                </div>
+            </div>
+
             <div class="screenshots"></div>
-            <div class="info_2"></div>
+            <div class="info_2">
+                <div class="info_left">
+                    <div class="info_picture"><img src="./img/news_background.jpg"></div>
+                    <div class="info_text">
+                        <div class="info_text_header"><span>COMPETITIONS</span></div>
+                        <div class="info_text_body"></div>
+                    </div>
+                </div>
+                <div class="info_right">
+                    <div class="info_text">
+                        <div class="info_text_header"><span>COMMUNITY</span></div>
+                        <div class="info_text_body"></div>
+                    </div>
+                    <div class="info_picture"><img src="./img/news_background.jpg"> </div>
+                </div>
+            </div>
             <div class="content-ending">
                 <p class="title">We are here to have <span class="colored">fun</span>!</p>
                 <p class="text">We welcome new players and are a very friendly bunch who love to play football.<br>I hope I don't have to rework this</br></p>

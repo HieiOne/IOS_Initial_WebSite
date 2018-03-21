@@ -174,10 +174,10 @@ body {
             }
 
             .buttons > a:hover > div > h1 {
-                color: whitesmoke;
+                color: white;
             }
             
-            .buttons > a:hover:not(.active):not(#button-signup):after {
+            .buttons > a:hover:not(.active):not(#button-login):after {
                 content: "";
                 position: absolute;
                 bottom: 0;
@@ -589,6 +589,56 @@ body {
         border: 1px solid #1B1A1A;
     }
 
+    .info_left, .info_right {
+        float: left;
+        height: 100%;
+        width: 49%; /*Change this later*/
+        border: 1px solid blue;
+    }
+
+    .info_picture, .info_text {
+        width: 100%;
+        height: 50%;
+        border: 1px solid green;
+    }
+
+    .info_picture > img {
+        height: 80%;
+        width: 65%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .info_text > .info_text_header {
+        width: 65%;
+        height: 10%;
+        border: 1px solid brown;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        letter-spacing: 1px;
+    }
+
+    .info_text_header > span {
+        position: relative;
+        top: 20%;
+        transform: translateY(-50%);
+        margin-left: 1%;
+    }
+
+    .info_text > .info_text_body {
+        width: 65%;
+        height: 65%;
+        border: 1px solid brown;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
     @media only screen and (max-width:800px) { /* For tablets */
         .new {
             width: 30.5%;
@@ -601,16 +651,20 @@ body {
             width: 100%;
             left: 50%;
         }
-
         .new_body {
             height: 55%;
         }
+        
+        .info_picture > img {
+            height: 90%;
+            width: 90%;
+        }
+
+        .info_text > .info_text_body, .info_text > .info_text_header {
+            width: 100%;
+        }
+
     }
-
-
-
-
-
 
 
 /* Footer */
