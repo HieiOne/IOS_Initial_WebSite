@@ -639,29 +639,35 @@ body {
         transform: translateY(-50%) translateX(-50%);
     }
 
-    @media only screen and (max-width:800px) { /* For tablets */
-        .new {
-            width: 30.5%;
-            height: 90%;
-        }
-    }
-
     @media only screen and (max-width:1024px) { /* Screens lower than 1024 width */
         .info_text > .info_text_body {
             width: 100%;
         }
 
         .info_picture > img {
-            height: 90%;
-            width: 90%;
+            height: 92%;
+            width: 95%;
         }
+    }
+
+    @media only screen and (max-width:800px) { /* For tablets */
+        .new {
+            width: 30.5%;
+            height: 90%;
+        }
+        
+        .info_picture > img {
+            height: 80%;
+            width: 100%;
+        }
+
     }
 
     @media only screen and (max-height:600px) { /* Screens lower than 600 height */
         .info_text > .info_text_header {
             top: 5%;
         }
-        
+
         .info_text > .info_text_body {
             top: 35%;
             width: 100%;
