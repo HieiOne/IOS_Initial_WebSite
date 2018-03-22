@@ -76,8 +76,8 @@
                 <div class="top">
                     <p>NEWS</p>
                     <div class="news_button">
-                        <div onclick="plusDivs(1)">&#10095</div>
-                        <div onclick="plusDivs(-1)" class="space">&#10094</div>
+                        <div onclick="plusDivs(1,0)">&#10095</div>
+                        <div onclick="plusDivs(-1,0)" class="space">&#10094</div>
                     </div>
                 </div>
                 <div class="boxes">
@@ -189,7 +189,48 @@
                 </div>
             </div>
 
-            <div class="screenshots"></div>
+            <div class="screenshots">
+                <div class="top">
+                    <p>SCREENSHOTS</p>
+                    <div class="news_button">
+                        <div onclick="plusDivs(1, 1)">&#10095</div>
+                        <div onclick="plusDivs(-1, 1)" class="space">&#10094</div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="screenshot fade">
+                            <img src="./img/news_background.jpg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
             <div class="info_2">
                 <div class="info_left">
                     <div class="info_picture"><img src="./img/news_background.jpg"></div>

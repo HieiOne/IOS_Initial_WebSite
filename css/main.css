@@ -522,7 +522,7 @@ body {
         margin-top: 0.5%;
     }
 
-    .new {
+    .new, .screenshot {
         height: 95%;
         width: 20%;
         border: 2px solid #161618;
@@ -588,7 +588,23 @@ body {
         opacity: 0.2;
     }
 
+    .screenshot > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 1;
+    }
+
     .new {
+        display: none;
+    }
+
+    .screenshot {
         display: none;
     }
 

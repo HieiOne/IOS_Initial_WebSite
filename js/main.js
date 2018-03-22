@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var sliders = ['new', 'screenshot'];
 var w = window.innerWidth;
 var h = window.innerHeight;
 var elements;
@@ -11,20 +12,23 @@ else if (w < 780) { /** Tablets */
 else {
     elements = 4;
 }
-showDivs(slideIndex);
 
-function plusDivs(n) {
+showDivs(slideIndex,0); /** Initiation of news */
+showDivs(slideIndex,1); /** Initiation of screenshots */
+
+function plusDivs(n,slider) {
+    console.log(slider);
     if (n == 1) {
-        showDivs(slideIndex += n-1+elements);
+        showDivs(slideIndex += n-1+elements, slider);
     }
     else {
-        showDivs(slideIndex -= elements);
+        showDivs(slideIndex -= elements, slider);
     }
 }
 
-function showDivs(n) {
+function showDivs(n,slider) {
     var i;
-    var x = document.getElementsByClassName("new");
+    var x = document.getElementsByClassName(sliders[slider]);
     
     
     if (n > x.length) {
