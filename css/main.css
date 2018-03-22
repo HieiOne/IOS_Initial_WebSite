@@ -646,6 +646,32 @@ body {
         }
     }
 
+    @media only screen and (max-width:1024px) { /* Screens lower than 1024 width */
+        .info_text > .info_text_body {
+            width: 100%;
+        }
+
+        .info_picture > img {
+            height: 90%;
+            width: 90%;
+        }
+    }
+
+    @media only screen and (max-height:600px) { /* Screens lower than 600 height */
+        .info_text > .info_text_header {
+            top: 5%;
+        }
+        
+        .info_text > .info_text_body {
+            top: 35%;
+            width: 100%;
+        }
+
+        .info_picture > img {
+            top: 55%;
+        }
+    }
+
     @media only screen and (max-width:600px) { /* For phones */
         .new {
             width: 100%;
@@ -662,6 +688,7 @@ body {
 
         .info_text > .info_text_body, .info_text > .info_text_header {
             width: 100%;
+            font-size: smaller;
         }
 
     }
@@ -719,7 +746,7 @@ input:-webkit-autofill:active {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
   }
   
   @-webkit-keyframes fade {
