@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IOSoccer Federation</title>
+    <title>IOSoccer Official</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="icon" href="img/iosf.png">
+    <link rel="icon" href="img/game.ico">
 </head>
 <body>
     <?php
@@ -198,37 +198,30 @@
                     </div>
                 </div>
                 <div class="boxes">
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
-                    <a href="#">
                         <div class="screenshot fade">
-                            <img src="./img/news_background.jpg">
+                            <img src="./img/news_background.jpg" onclick="ShowModal('./img/news_background.jpg')">
                         </div>
-                    </a>
                 </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
             </div>
             
             <div class="info_2">

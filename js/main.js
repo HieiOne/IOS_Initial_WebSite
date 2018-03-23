@@ -1,3 +1,18 @@
+var modal = document.getElementById('myModal'); /** For the image zoom */
+var modalImg = document.getElementById("img01");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() { 
+    modal.style.display = "none";
+}
+
+function ShowModal(image) {
+    modal.style.display = "block";
+    modalImg.src = image;
+}
+
 var slideIndex = 1;
 var sliders = ['new', 'screenshot'];
 var w = window.innerWidth;
@@ -17,7 +32,6 @@ showDivs(slideIndex,0); /** Initiation of news */
 showDivs(slideIndex,1); /** Initiation of screenshots */
 
 function plusDivs(n,slider) {
-    console.log(slider);
     if (n == 1) {
         showDivs(slideIndex += n-1+elements, slider);
     }
@@ -48,4 +62,4 @@ function showDivs(n,slider) {
         x[slideIndex-1+i].style.display = "block";
     };
 
-}   
+}
