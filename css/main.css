@@ -16,7 +16,7 @@ body {
     min-width: 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
-    grid-template-rows: 0.44fr 1.8fr 80px;
+    grid-template-rows: 0.48fr 1.8fr 80px;
     grid-template-areas: "header"
                          "content"
                          "footer";
@@ -29,7 +29,7 @@ body {
 @media only screen and (max-width:600px) { /* For phones */
     #main {
         min-height: 380vh;
-        grid-template-rows: 0.2fr 1.1fr 80px;
+        grid-template-rows: 0.18fr 1.1fr 80px;
         grid-row-gap: 20px;
     }
 }
@@ -824,7 +824,7 @@ body {
         .info_text > .info_text_body {
             top: 40%;
             width: 100%;
-            margin-bottom: 1.2%;
+            margin-bottom: 5%;
         }
 
         .title {
