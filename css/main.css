@@ -759,7 +759,7 @@ body {
     
     @media only screen and (max-width:800px) { /* For tablets */
         .new, .screenshot {
-            width: 30.5%;
+            width: 30%;
             height: 90%;
         }
         
