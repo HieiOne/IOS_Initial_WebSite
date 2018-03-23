@@ -60,7 +60,7 @@ body {
     .top-bar {
         height: 15%;
         display: grid;
-        width: 100%;
+        width: 99.8%;
         grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
         grid-template-rows: 1fr;
         grid-template-areas: "game-title search-bar buttons .";
@@ -253,7 +253,7 @@ body {
     @media only screen and (min-height:600px) { /* For screens more than 600px of height */
         .intro {
             height: 85%;
-            width: 100%;
+            width: 99.8%;
             display: grid;
             grid-template-columns: 0.6fr 1fr;
             grid-template-rows: 0.6fr 0.5fr 0.3fr 0.5fr;
@@ -267,7 +267,7 @@ body {
     @media only screen and (max-height:600px) { /* For screens less than 600px of height */
         .intro {
             height: 85%;
-            width: 100%;
+            width: 99.8%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
