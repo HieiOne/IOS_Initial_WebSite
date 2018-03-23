@@ -668,6 +668,16 @@ body {
         transform: translateY(-50%) translateX(-50%);
     }
 
+    @media only screen and (min-width: 1024px) and (min-height: 600px) {
+        .info_left > .info_picture > img, .info_left > .info_text > div{
+            left: 62.5%;
+        }
+
+        .info_right > .info_picture > img, .info_right > .info_text > div{
+            left: 38.5%;
+        }
+    }
+    
     /* Modal */
     .modal {
         display: none;
