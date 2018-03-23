@@ -34,7 +34,17 @@
                     </form>
                 </div>
                 <div class="buttons">
-                    <a><img src="./img/bars.png"></img></a>
+                    <div class="dropdown">
+                        <a><img class="dropbtn" src="./img/bars.png"></img></a>
+                        <div class="dropdown-content">
+                            <a class="active" href="#">HOME</a>
+                            <a href="#">NEWS</a>
+                            <a href="#">ABOUT</a>
+                            <a href="#">LEAGUE</a>
+                            <a href="#">CONTACT</a>
+                            <a href="#">LOGIN</a>
+                        </div>
+                    </div>
                     <a href="#" id="button-home" class="active"><div><h1>HOME</h1></div></a>
                     <a href="#" id="button-news"><div><h1>NEWS</h1></div></a>
                     <a href="#" id="button-about"><div><h1>ABOUT</h1></div></a>
