@@ -1,0 +1,549 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Body */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1B1A1A;
+}
+
+/* Grid */
+#main {
+    display: grid;
+    min-height: 380vh; /*After everything is done change this to auto*/
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    grid-template-rows: 0.431fr 1.8fr 80px;
+    grid-template-areas: "header"
+                         "content"
+                         "footer";
+    opacity: 0.98;
+    background-color: #1B1A1A;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:600px) { /* For phones */
+    #main {
+        min-height: 380vh;
+        grid-template-rows: 0.18fr 1.1fr 80px;
+        grid-row-gap: 20px;
+    }
+}
+
+/* Grid positions */
+
+/* Header */
+.header {
+    grid-area: header;
+    position: relative;
+}
+
+.header > div {
+    border: 1px solid #28282a;
+    background-color: rgba(27,26,26,0.9);
+}
+
+    .background {
+        background-image: url(../img/temporary.jpg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;  
+    }
+
+    .top-bar {
+        height: 15%;
+        display: grid;
+        width: 99.8%;
+        grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "game-title search-bar buttons .";
+    }
+
+    
+    @media only screen and (max-width:800px) { /* For tablets and small screens */
+        .top-bar {
+            grid-template-columns: 1.5fr 1.5fr 6fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "game-title search-bar buttons";
+        }
+    }
+    
+    @media only screen and (max-width:600px) { /* For phones */
+        .top-bar {
+            grid-column-gap: 4px;
+            grid-template-columns: 1.5fr 1.5fr 0.5fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "game-title search-bar buttons";
+        }
+    }
+        .game-title {
+            grid-area: game-title;
+            position: relative;
+            font-size: 12px;
+        }
+
+        .game-title > a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        
+        .game-title > a > h1:hover {
+            text-shadow: 0px 0px 10px #fff;
+        }
+
+        .search-bar {
+            grid-area: search-bar;
+            text-align: center;
+            position: relative;
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .search {
+            box-sizing: border-box;
+            border: 2px solid #28282a;
+            border-radius: 4px;
+            background-color: #28282a;
+            background-image: url('../img/searchicon.png');
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            font-size: 16px;
+            font-weight: bold;
+            color: #a9a9a9;
+            width: 100%;
+            position: relative;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            grid-area: buttons;
+            text-align: center;
+        }
+
+        .buttons > div {
+            height: 100%;
+            width: 100%;
+        }
+
+        .buttons > div > a > img {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: #161618;
+            width: 100vw;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .dropdown-content > .active {
+            color: #f1c40f;
+            text-shadow: 0px 0px 4px #f1c40f;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #1B1A1A;
+        }
+        
+        /* .dropdown:hover .dropdown-content {
+            display: block;
+        } */
+
+        .buttons > a > div {
+            display: none
+        }
+
+        @media only screen and (min-width:600px) { /* For normal screens */
+            .buttons {
+                    grid-area: buttons;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-rows: 1fr;
+                    grid-template-areas: "button-home button-news button-league button-about button-contact button-login"
+            }
+
+            .buttons > a {
+                text-decoration: none;
+                position: relative;
+            }
+
+            .buttons > a > div {
+                margin: 0;
+                padding: 0;
+                color: #a9a9a9;
+                font-size: 8px;
+                text-align: center;
+                height: 100%;
+            }
+
+            .buttons > a > div > h1 {
+                position: absolute;
+                left: 50%;
+                top: 38%;
+                transform: translateY(-50%) translateX(-50%);
+                font-weight: bold;
+            }
+
+            .buttons > a:hover > div > h1 {
+                color: white;
+            }
+            
+            .buttons > a:hover:not(.active):not(#button-login):after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 20%;
+                border-bottom:2px solid silver;
+                box-shadow: 0px 0px 10px #fff;
+            }
+
+            .buttons > .active:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 20%;
+                border-bottom:3px solid #f1c40f;
+                box-shadow: 0px 0px 10px #f1c40f;
+            }
+
+            .buttons > .active > div > h1 {
+                color: whitesmoke
+            }
+
+            #button-home {
+                grid-area: button-home;
+            }
+            #button-news {
+                grid-area: button-news;
+            }
+            #button-league {
+                grid-area: button-league;
+            }
+            #button-about {
+                grid-area: button-about;
+            }
+            #button-contact {
+                grid-area: button-contact;
+            }
+            #button-login {
+                grid-area: button-login;
+            }
+            .login {
+                border: 1px solid #f1c40f;
+                border-radius: 4px;
+                background-color: #f1c40f;
+                color: black;
+                font-weight: bold;
+                width: 80%;
+                padding: 8px;
+                text-shadow: 1px 0 black;
+                letter-spacing: 1px;
+            }
+
+            .buttons > div {
+                display: none;
+            }
+
+            .buttons > a > div {
+                display: initial;
+            }
+        }
+
+    @media only screen and (min-height:600px) { /* For screens more than 600px of height */
+        .intro {
+            height: 85%;
+            width: 99.8%;
+            display: grid;
+            grid-template-columns: 0.6fr 1fr;
+            grid-template-rows: 0.6fr 0.5fr 0.3fr 0.5fr;
+            grid-template-areas: "gameprice video"
+                                "description video"
+                                "download video"
+                                "socialnetworks video";
+        }
+    }
+
+    @media only screen and (max-height:600px) { /* For screens less than 600px of height */
+        .intro {
+            height: 85%;
+            width: 99.8%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
+            grid-template-areas: "gameprice video"
+                                "description video"
+                                "download video"
+                                "socialnetworks video";
+        }
+
+        .socialnetworks > .images {
+            margin-top: 3%;
+        }
+    }
+
+    @media only screen and (max-width:600px) { /* For phones */
+        .intro {
+            height: 85%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 1fr 0.3fr 0.5fr;
+            grid-template-areas: "gameprice"
+                                "description"
+                                "download"
+                                "socialnetworks";
+        }
+
+
+
+        .socialnetworks > .images {
+            margin-top: 3%;
+        }
+    }
+
+            .gameprice {
+                grid-area: gameprice;
+                position: relative;
+                text-align: center;
+                display: flex;
+                height: 100%;
+            }
+
+            .gameprice > p {
+                margin-left: 30%;
+                align-self: flex-end;
+                display: flex;
+                letter-spacing: 4px;
+                font-size: 13px;
+                position: relative;
+                text-shadow: 0px 0px 2px whitesmoke;
+            }
+
+            .gameprice > p > span:before {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 2px;
+                border: 1px solid #f1c40f;
+                background: #f1c40f;
+                box-shadow: 0px 0px 10px #f1c40f;
+                border-radius: 15px;
+                right: 100%;
+                margin-right: 10%;
+                margin-top: 5%;
+            }
+
+            .description {
+                grid-area: description;
+            }
+
+            .description > p {
+                padding: 0;
+                margin-left: 18.5%;
+                font-size: x-large;
+                letter-spacing: 1.3px;
+            }
+
+
+
+            .download {
+                grid-area: download;
+            }
+
+            .download > button {
+                line-height: 1.5em;
+                margin-left: 22.5%;
+                padding: 12px;
+                width: 140px;
+                background: white;
+                border-color: white;
+                border: 0px solid #1B1A1A;
+                font-weight: bold;
+                color: #666666;
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+                box-shadow: 0px 0 3px whitesmoke;
+            }
+
+            .download > button::after {
+                content: "  ➜";
+                font-size: 16px;
+                font-weight: bold;
+                color: #f1c40f;
+                
+            }
+
+            .socialnetworks {
+                grid-area: socialnetworks;
+            }
+
+            .socialnetworks > .images {
+                margin-left: 22.5%;
+                width: 50%;
+            }
+
+            .socialnetworks > .images > a > img {
+                height: 25px;
+                width: 25px;
+                margin-right: 3%;
+                margin-top: 0%;
+                opacity: 0.2;
+            }
+
+            .images > a > img:hover {
+                opacity: 0.9;
+            }
+
+            .video {
+                opacity: initial;
+                grid-area: video;
+                position: relative;
+            }
+
+            .video > iframe {
+                width: 60%;
+                height: 70%;
+                border: 0px;
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translateY(-50%) translateX(-50%);
+            }
+
+/* CONTENT */
+
+.content {
+    border: 1px solid #28282a;
+}
+
+    .news {
+        border: 1px solid red;
+        width: 95%;
+        height: 98%;
+        margin: 0 auto;
+    }
+
+    .new {
+        display: inline-block;
+        height: 14.5%;
+        width: 28%;
+        border: 1px solid blue;
+        margin-left: 3.8%;
+        margin-bottom: 3%;
+    }
+
+    .pagination {
+        border: 1px solid green;
+        width: 95%;
+        height: 2%;
+        margin: 0 auto;
+    }
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #161618;
+}
+
+    .footer > h1 {
+        color: whitesmoke;
+        font-size: small;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        margin-left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: whitesmoke !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border: 2px solid #28282a;
+    background: #161618; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
