@@ -29,30 +29,9 @@
         <div class="content">
             <div class="news">
                 <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
-                </div>
-                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress still. Work has been ongoing in trying to assemble and finish the various remaining elements of the player model, but now with the help of a certain old schooler, in the form of...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                 </div>

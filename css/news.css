@@ -11,12 +11,12 @@ body {
 /* Grid */
 #main {
     display: grid;
-    min-height: 380vh; /*After everything is done change this to auto*/
+    min-height: 220vh; /*After everything is done change this to auto*/
     width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
-    grid-template-rows: 0.431fr 1.8fr 80px;
+    grid-template-rows: 0.949fr 1.8fr 80px;
     grid-template-areas: "header"
                          "content"
                          "footer";
@@ -28,8 +28,16 @@ body {
 
 @media only screen and (max-width:600px) { /* For phones */
     #main {
-        min-height: 380vh;
-        grid-template-rows: 0.18fr 1.1fr 80px;
+        min-height: 1000vh;
+        grid-template-rows: 0.1001fr 1.575fr 80px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width:1366px) { /* For phones */
+    #main {
+        min-height: 750vh;
+        grid-template-rows: 0.1627fr 1.575fr 80px;
         grid-row-gap: 20px;
     }
 }
@@ -456,32 +464,82 @@ body {
 
 /* CONTENT */
 
-.content {
-    border: 1px solid #28282a;
-}
-
     .news {
         border: 1px solid red;
         width: 95%;
-        height: 98%;
+        height: 97%;
         margin: 0 auto;
     }
 
     .new {
-        display: inline-block;
-        height: 14.5%;
-        width: 28%;
-        border: 1px solid blue;
-        margin-left: 3.8%;
+        float: left;
+        height: 45%;
+        width: 25%;
+        border: 4px solid #161618;
+        box-shadow: 4px 4px 0px #28282a;
+        margin-left: 1.5%;
         margin-bottom: 3%;
+        padding: 10px;
     }
 
     .pagination {
         border: 1px solid green;
         width: 95%;
-        height: 2%;
+        height: 3%;
         margin: 0 auto;
     }
+
+    .new_picture {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 50%;
+    }
+
+    .new_text {
+        width: 100%;
+        height: 40%;
+        font-size: medium;
+    }
+
+    .new_text > span, .new_author > span {
+        display: block;
+        letter-spacing: 1px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .new_author {
+        width: 100%;
+        height: 10%;
+        border: 1px solid brown;
+    }
+
+    @media only screen and (max-width: 1366px) {
+        .new {
+            width: 35%;
+            height: 10.1%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .news {
+            height: 99%;
+        }
+
+        .new {
+            width: 90%; /* Increase this later*/
+            height: 5.35%;
+        }
+
+        .pagination {
+            height: 1%;
+        }
+    }
+
+
+
 
 /* Footer */
 .footer {
