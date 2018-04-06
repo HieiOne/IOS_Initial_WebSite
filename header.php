@@ -16,7 +16,7 @@
                         <a><img class="dropbtn" src="./img/bars.png"></img></a>
                         <div class="dropdown-content">
                             <a class="active" href="index.php">HOME</a>
-                            <a href="#">NEWS</a>
+                            <a href="news.php">NEWS</a>
                             <a href="#">ABOUT</a>
                             <a href="#">LEAGUE</a>
                             <a href="#">CONTACT</a>

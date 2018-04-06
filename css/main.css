@@ -715,8 +715,8 @@ body {
             margin: 0;
             left: 38.5%;
         }
-
     }
+
 
     @media only screen and (max-width: 1024px) {
         .info_left > .info_picture > img, .info_left > .info_text > div{
@@ -727,14 +727,19 @@ body {
         .info_right > .info_picture > img, .info_right > .info_text > div{
             margin: 0;
             left: 53%;
-        }
+        } 
     }
 
     @media only screen and (max-width: 800px) {
         .info_text, .info_text_body {
             margin-top: 5%;
         }
+    }
 
+    @media only screen and (max-width: 600px) {
+        .info_text, .info_text_body {
+            margin-top: 0;
+        }
     }
     
     /* Modal */
@@ -826,7 +831,6 @@ body {
             height: 80%;
             width: 100%;
         }
-
     }
 
     @media only screen and (max-height:600px) { /* Screens lower than 600 height */

@@ -1,18 +1,3 @@
-var modal = document.getElementById('myModal'); /** For the image zoom */
-var modalImg = document.getElementById("img01");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-modal.onclick = function() { 
-    modal.style.display = "none";
-}
-
-function ShowModal(image) {
-    modal.style.display = "block";
-    modalImg.src = image;
-}
-
 var dropdown = document.getElementsByClassName("dropdown-content")[0];
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -73,4 +58,19 @@ function showDivs(n,slider) {
         x[slideIndex-1+i].style.display = "block";
     };
 
+}
+
+var modal = document.getElementById('myModal'); /** For the image zoom */
+var modalImg = document.getElementById("img01");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() { 
+    modal.style.display = "none";
+}
+
+function ShowModal(image) {
+    modal.style.display = "block";
+    modalImg.src = image;
 }

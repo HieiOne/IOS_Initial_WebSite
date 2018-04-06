@@ -11,12 +11,12 @@ body {
 /* Grid */
 #main {
     display: grid;
-    min-height: 210vh; /*After everything is done change this to auto*/
+    min-height: 150vh; /*After everything is done change this to auto*/
     width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 0.57fr 1fr 80px;
+    grid-row-gap: 10px;
+    grid-template-rows: 100px 1fr 80px;
     grid-template-areas: "header"
                          "content"
                          "footer";
@@ -28,17 +28,9 @@ body {
 
 @media only screen and (max-width:600px) { /* For phones */
     #main {
-        min-height: 1000vh;
-        grid-template-rows: 0.1001fr 1.575fr 80px;
-        grid-row-gap: 20px;
-    }
-}
-
-@media only screen and (max-width:1366px) { /* For phones */
-    #main {
-        min-height: 750vh;
-        grid-template-rows: 0.1627fr 1.575fr 80px;
-        grid-row-gap: 20px;
+        min-height: 150vh;
+        grid-template-rows: 65px 1fr 80px;
+        grid-row-gap: 5px;
     }
 }
 
@@ -66,7 +58,7 @@ body {
     }
 
     .top-bar {
-        height: 15%;
+        height: 100%;
         display: grid;
         width: 99.8%;
         grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
@@ -300,195 +292,46 @@ body {
             }
         }
 
-    @media only screen and (min-height:600px) { /* For screens more than 600px of height */
-        .intro {
-            height: 85%;
-            width: 99.8%;
-            display: grid;
-            grid-template-columns: 0.6fr 1fr;
-            grid-template-rows: 0.6fr 0.5fr 0.3fr 0.5fr;
-            grid-template-areas: "gameprice video"
-                                "description video"
-                                "download video"
-                                "socialnetworks video";
-        }
-    }
-
-    @media only screen and (max-height:600px) { /* For screens less than 600px of height */
-        .intro {
-            height: 85%;
-            width: 99.8%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
-            grid-template-areas: "gameprice video"
-                                "description video"
-                                "download video"
-                                "socialnetworks video";
-        }
-
-        .socialnetworks > .images {
-            margin-top: 3%;
-        }
-    }
-
-    @media only screen and (max-width:600px) { /* For phones */
-        .intro {
-            height: 85%;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.3fr 1fr 0.3fr 0.5fr;
-            grid-template-areas: "gameprice"
-                                "description"
-                                "download"
-                                "socialnetworks";
-        }
-
-
-
-        .socialnetworks > .images {
-            margin-top: 3%;
-        }
-    }
-
-            .gameprice {
-                grid-area: gameprice;
-                position: relative;
-                text-align: center;
-                display: flex;
-                height: 100%;
-            }
-
-            .gameprice > p {
-                margin-left: 30%;
-                align-self: flex-end;
-                display: flex;
-                letter-spacing: 4px;
-                font-size: 13px;
-                position: relative;
-                text-shadow: 0px 0px 2px whitesmoke;
-            }
-
-            .gameprice > p > span:before {
-                content: "";
-                position: absolute;
-                width: 40px;
-                height: 2px;
-                border: 1px solid #f1c40f;
-                background: #f1c40f;
-                box-shadow: 0px 0px 10px #f1c40f;
-                border-radius: 15px;
-                right: 100%;
-                margin-right: 10%;
-                margin-top: 5%;
-            }
-
-            .description {
-                grid-area: description;
-            }
-
-            .description > p {
-                padding: 0;
-                margin-left: 18.5%;
-                font-size: x-large;
-                letter-spacing: 1.3px;
-            }
-
-
-
-            .download {
-                grid-area: download;
-            }
-
-            .download > button {
-                line-height: 1.5em;
-                margin-left: 22.5%;
-                padding: 12px;
-                width: 140px;
-                background: white;
-                border-color: white;
-                border: 0px solid #1B1A1A;
-                font-weight: bold;
-                color: #666666;
-                font-size: 12px;
-                letter-spacing: 1.5px;
-                cursor: pointer;
-                box-shadow: 0px 0 3px whitesmoke;
-            }
-
-            .download > button::after {
-                content: "  ➜";
-                font-size: 16px;
-                font-weight: bold;
-                color: #f1c40f;
-                
-            }
-
-            .socialnetworks {
-                grid-area: socialnetworks;
-            }
-
-            .socialnetworks > .images {
-                margin-left: 22.5%;
-                width: 50%;
-            }
-
-            .socialnetworks > .images > a > img {
-                height: 25px;
-                width: 25px;
-                margin-right: 3%;
-                margin-top: 0%;
-                opacity: 0.2;
-            }
-
-            .images > a > img:hover {
-                opacity: 0.9;
-            }
-
-            .video {
-                opacity: initial;
-                grid-area: video;
-                position: relative;
-            }
-
-            .video > iframe {
-                width: 60%;
-                height: 70%;
-                border: 0px;
-                position: absolute;
-                top: 50%;
-                left: 40%;
-                transform: translateY(-50%) translateX(-50%);
-            }
-
 /* CONTENT */
+    .content {
+    }
 
     .news {
-        border: 1px solid red;
-        width: 81.2%;
-        height: 97%;
+        width: 95%;
+        padding: 10px;
+        height: calc(100% - 80px);
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly
     }
 
     .new {
         flex: 0 0 auto;
         height: 480px;
-        width: 455px;
+        width: 435px;
         border: 4px solid #161618;
         box-shadow: 4px 4px 0px #28282a;
         /* margin: 0 auto; */
         padding: 10px;
+        margin-top: 2%;
     }
 
     .pagination {
-        border: 1px solid green;
         width: 95%;
-        height: 3%;
+        height: 60px;
         margin: 0 auto;
+    }
+
+    .pagination > button {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #28282a;
+        background-color: #161618;
+        border-radius: 10px;
+        color: #f1c40f;
+        font-weight: bold;
     }
 
     .new_picture {
@@ -527,22 +370,12 @@ body {
     }
 
     @media only screen and (max-width: 600px) {
-        .news {
-            height: 99%;
-        }
-
         .new {
-            width: 90%; /* Increase this later*/
-            height: 5.35%;
-        }
-
-        .pagination {
-            height: 1%;
+            width: 97%; /* Increase this later*/
+            height: 400px;
+            margin-bottom: 5%;
         }
     }
-
-
-
 
 /* Footer */
 .footer {
