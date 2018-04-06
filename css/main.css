@@ -15,9 +15,10 @@ body {
     width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 0.48fr 1.8fr 80px;
+    grid-row-gap: 6px;
+    grid-template-rows: 100px 0.42fr 1.8fr 80px;
     grid-template-areas: "header"
+                         "intro"
                          "content"
                          "footer";
     opacity: 0.98;
@@ -29,8 +30,8 @@ body {
 @media only screen and (max-width:600px) { /* For phones */
     #main {
         min-height: 380vh;
-        grid-template-rows: 0.18fr 1.1fr 80px;
-        grid-row-gap: 20px;
+        grid-template-rows: 65px 0.18fr 1.1fr 80px;
+        grid-row-gap: 2px;
     }
 }
 
@@ -47,18 +48,8 @@ body {
     background-color: rgba(27,26,26,0.9);
 }
 
-    .background {
-        background-image: url(../img/temporary.jpg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;  
-    }
-
     .top-bar {
-        height: 15%;
+        height: 100%;
         display: grid;
         width: 99.8%;
         grid-template-columns: 1.5fr 1.5fr 4fr 0.5fr;
@@ -294,7 +285,8 @@ body {
 
     @media only screen and (min-height:600px) { /* For screens more than 600px of height */
         .intro {
-            height: 85%;
+            grid-area: intro;
+            height: 100%;
             width: 99.8%;
             display: grid;
             grid-template-columns: 0.6fr 1fr;
@@ -303,22 +295,11 @@ body {
                                 "description video"
                                 "download video"
                                 "socialnetworks video";
+            position: relative;
         }
     }
 
     @media only screen and (max-height:600px) { /* For screens less than 600px of height */
-        .intro {
-            height: 85%;
-            width: 99.8%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr;
-            grid-template-areas: "gameprice video"
-                                "description video"
-                                "download video"
-                                "socialnetworks video";
-        }
-
         .socialnetworks > .images {
             margin-top: 3%;
         }
@@ -326,6 +307,7 @@ body {
 
     @media only screen and (max-width:600px) { /* For phones */
         .intro {
+            grid-area: intro;
             height: 85%;
             width: 100%;
             display: grid;
@@ -335,6 +317,7 @@ body {
                                 "description"
                                 "download"
                                 "socialnetworks";
+            position: relative;
         }
 
 
@@ -445,14 +428,27 @@ body {
             }
 
             .video > iframe {
-                width: 60%;
-                height: 70%;
+                width: 80%;
+                height: 80%;
                 border: 0px;
                 position: absolute;
                 top: 50%;
-                left: 40%;
+                left: 50%;
                 transform: translateY(-50%) translateX(-50%);
             }
+            
+            .background {
+                background-image: url(../img/temporary.jpg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;  
+            }
+    .intro > div {
+        background-color: rgba(27,26,26,0.8);
+    }
 
 /* Content */
 
@@ -706,17 +702,39 @@ body {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-40%) translateX(-50%);
     }
 
     @media only screen and (min-width: 1024px) and (min-height: 600px) {
         .info_left > .info_picture > img, .info_left > .info_text > div{
+            margin: 0;
             left: 62.5%;
         }
 
         .info_right > .info_picture > img, .info_right > .info_text > div{
+            margin: 0;
             left: 38.5%;
         }
+
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .info_left > .info_picture > img, .info_left > .info_text > div{
+            margin: 0;
+            left: 52%;
+        }
+
+        .info_right > .info_picture > img, .info_right > .info_text > div{
+            margin: 0;
+            left: 53%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .info_text, .info_text_body {
+            margin-top: 5%;
+        }
+
     }
     
     /* Modal */

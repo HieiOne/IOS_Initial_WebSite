@@ -23,7 +23,27 @@
         //HEADER
         include("header.php");
     ?>
-
+        <!-- INTRO -->
+        <div class="intro">
+            <div class="gameprice">
+                <p><span>FREE TO PLAY</span></p>
+            </div>
+            <div class="description"><p>A skill based first-person soccer game,<br>download now for free!</p></div>
+            <div class="download">
+                <button>DOWNLOAD</button>
+            </div>
+            <div class="socialnetworks">
+                <div class="images">
+                    <a href="#"><img src="./img/twitter.png"></a>
+                    <a href="#"><img src="./img/facebook.png"></a>
+                    <a href="#"><img src="./img/youtube.png"></a>
+                </div>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/aQUaKW-KHtQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="background"></div>
+        </div>
 
         <!-- CONTENT -->
         <div class="content">

@@ -32,7 +32,7 @@ var elements;
 if (w < 600) { /** Phones */
     elements = 1;
 }
-else if (w < 780) { /** Tablets */
+else if (w < 810) { /** Tablets */
     elements = 3;
 }
 else {

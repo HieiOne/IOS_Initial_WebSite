@@ -11,12 +11,12 @@ body {
 /* Grid */
 #main {
     display: grid;
-    min-height: 220vh; /*After everything is done change this to auto*/
+    min-height: 210vh; /*After everything is done change this to auto*/
     width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
-    grid-template-rows: 0.949fr 1.8fr 80px;
+    grid-template-rows: 0.57fr 1fr 80px;
     grid-template-areas: "header"
                          "content"
                          "footer";
@@ -466,19 +466,21 @@ body {
 
     .news {
         border: 1px solid red;
-        width: 95%;
+        width: 81.2%;
         height: 97%;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .new {
-        float: left;
-        height: 45%;
-        width: 25%;
+        flex: 0 0 auto;
+        height: 480px;
+        width: 455px;
         border: 4px solid #161618;
         box-shadow: 4px 4px 0px #28282a;
-        margin-left: 1.5%;
-        margin-bottom: 3%;
+        /* margin: 0 auto; */
         padding: 10px;
     }
 
@@ -513,14 +515,15 @@ body {
     .new_author {
         width: 100%;
         height: 10%;
-        border: 1px solid brown;
+        border: 3px solid #28282a;
+        padding: 5px;
     }
 
     @media only screen and (max-width: 1366px) {
-        .new {
+        /* .new {
             width: 35%;
             height: 10.1%;
-        }
+        } */
     }
 
     @media only screen and (max-width: 600px) {
