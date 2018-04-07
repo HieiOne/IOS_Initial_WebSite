@@ -24,7 +24,6 @@ function displayDivs() {
         for (i = 0; i < items; i++) {
             x[i].style.display = "block"; 
         }
-        console.log(items,x.length-itemsToDisplay)
         
         if (items == x.length) {
             button[0].firstChild.nodeValue = "THERE ARE NO MORE NEWS";
