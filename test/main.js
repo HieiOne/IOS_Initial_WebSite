@@ -1,5 +1,5 @@
 var items = 0; // Initial news to display
-var itemsToDisplay = 5; // Items we will show every time we press Click On Me!
+var itemsToDisplay = 6; // Items we will show every time we press Click On Me!
 displayDivs(); // Let's startoooo KANSEI DORIFTO!
 
 function displayDivs() {
@@ -11,8 +11,6 @@ function displayDivs() {
         
         for (i = 0; i < items; i++) {
             x[i].style.display = "block"; 
-            console.log(i)
         }
     }
-    console.log(items,x.length);
 }

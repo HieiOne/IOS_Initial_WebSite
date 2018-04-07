@@ -30,39 +30,128 @@
             <div class="news">
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
                 <div class="new">
                     <img class="new_picture" src="./img/news_background.jpg"> 
-                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been some progress because balblab</span></div>
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
                     <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
                 </div>
-                
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
+                <div class="new">
+                    <img class="new_picture" src="./img/news_background.jpg"> 
+                    <div class="new_text"><span>Whilst saying "progress has been slow" may sound like a bad thing, it probably isn't in our case, because it rightfully implies that there has been ...</span></div>
+                    <div class="new_author"><span>Posted on 2015 May 31 by Thing'e'</span></div>
+                </div>
             </div>
         </div>
         <div class="pagination">
-            <button onclick="displayDivs()">MORE NEWS!</button>
+            <button class="pagination_button" onclick="displayDivs()">MORE NEWS!</button>
         </div>
         
         <!-- FOOTER -->
@@ -71,7 +160,6 @@
     <!-- SCRIPTS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/news.js"></script>
-    <script src="js/topbar.js"></script>
     <?php
         // CLOSING DB
         mysqli_close($db);
