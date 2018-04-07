@@ -60,10 +60,11 @@
                 </div>
                 
             </div>
-            <div class="pagination">
-                <button onclick="displayDivs()">MORE NEWS!</button>
-            </div>
         </div>
+        <div class="pagination">
+            <button onclick="displayDivs()">MORE NEWS!</button>
+        </div>
+        
         <!-- FOOTER -->
         <?php include('footer.php'); ?>
     </div>
