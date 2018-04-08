@@ -156,13 +156,13 @@
                     <div class="info_picture"><img src="./img/news_background.jpg"></div>
                     <div class="info_text">
                         <div class="info_text_header"><span>TEAMS</span></div>
-                        <div class="info_text_body"><span class="title"><span class="colored">Good players</span> need teams<br></span><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
+                        <div class="info_text_body"><span class="title"><span class="colored">Good players</span> need teams</span><br><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
                     </div>
                 </div>
                 <div class="info_right">
                     <div class="info_text">
                         <div class="info_text_header"><span>GAMEPLAY</span></div>
-                        <div class="info_text_body"><span class="title">Complete <span class="colored">freedom</span><br></span><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
+                        <div class="info_text_body"><span class="title">Complete <span class="colored">freedom</span></span><span><br>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
                     </div>
                     <div class="info_picture"><img src="./img/news_background.jpg"> </div>
                 </div>
@@ -208,13 +208,13 @@
                     <div class="info_picture"><img src="./img/news_background.jpg"></div>
                     <div class="info_text">
                         <div class="info_text_header"><span>COMPETITIONS</span></div>
-                        <div class="info_text_body"><span class="title">Fun casual <span class="colored">tournaments</span><br></span><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
+                        <div class="info_text_body"><span class="title">Fun casual <span class="colored">tournaments</span></span><br><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
                     </div>
                 </div>
                 <div class="info_right">
                     <div class="info_text">
                         <div class="info_text_header"><span>COMMUNITY</span></div>
-                        <div class="info_text_body"><span class="title"><span class="colored">Friendly</span> staff and players<br></span><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
+                        <div class="info_text_body"><span class="title"><span class="colored">Friendly</span> staff and players</span><br><span>For you,the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated little man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should. man whose wife will be sitting at home, knitting, wondering why your entry demands more of her husband‘s time than it should.</span></div>
                     </div>
                     <div class="info_picture"><img src="./img/news_background.jpg"> </div>
                 </div>
