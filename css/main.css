@@ -283,7 +283,7 @@ body {
             }
         }
 
-    @media only screen and (min-height:600px) { /* For screens more than 600px of height */
+    @media only screen and (min-width:600px) { /* For screens more than 600px of height */
         .intro {
             grid-area: intro;
             height: 100%;
@@ -297,6 +297,8 @@ body {
                                 "socialnetworks video";
             position: relative;
         }
+
+
     }
 
     @media only screen and (max-height:600px) { /* For screens less than 600px of height */
@@ -326,6 +328,7 @@ body {
             margin-top: 3%;
         }
     }
+    
 
             .gameprice {
                 grid-area: gameprice;
@@ -466,9 +469,9 @@ body {
                          "content-ending";
 }
 
-    .content > div {
-        /* border: 1px solid yellow; */
-    }
+    /*.content > div {
+         border: 1px solid yellow; 
+    }*/
 
     .content-introduction {
         grid-area: content-introduction;
