@@ -145,8 +145,8 @@ body {
         }
 
         .buttons > div > a > img {
-            height: 20px;
-            width: 20px;
+            height: 40%;
+            width: 50%;
             position: relative;
             top: 50%;
             transform: translateY(-50%);
