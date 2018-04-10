@@ -1,3 +1,4 @@
+console.log("HOL")
 var dropdown = document.getElementsByClassName("dropdown-content")[0];
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -17,7 +18,7 @@ var elements;
 if (w < 600) { /** Phones */
     elements = 1;
 }
-else if (w < 1024) { /** Tablets */
+else if (w <= 1026) { /** Tablets, 1024 doesn't work... wtf */
     elements = 3;
 }
 else {
