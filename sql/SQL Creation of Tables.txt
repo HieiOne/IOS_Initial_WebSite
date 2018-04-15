@@ -46,3 +46,27 @@ INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfo
 INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('4', 'Vita Mia', '19', '7', '11', '1', '36', '45');
 INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('5', 'Natural Talent', '19', '5', '11', '4', '76', '15');
 INSERT INTO `leaguetable` (`id`, `team`, `pld`, `won`, `drawn`, `lost`, `goalsfor`, `goalsagainst`) VALUES ('6', 'Phoenix', '19', '0', '0', '19', '5', '90');
+
+CREATE TABLE leaderboard_ranks (
+	rank int PRIMARY KEY,
+	min int NOT NULL,
+	max int NOT NULL,
+	name text NOT NULL
+)
+
+INSERT INTO `leaderboard_ranks` (`rank`,`min`,`max`,`name`) VALUES ('1','0','999','AMATEUR');
+INSERT INTO `leaderboard_ranks` (`rank`,`min`,`max`,`name`) VALUES ('2','1000','1299','SEMI-PRO');
+INSERT INTO `leaderboard_ranks` (`rank`,`min`,`max`,`name`) VALUES ('3','1300','1699','PROFESSIONAL');
+INSERT INTO `leaderboard_ranks` (`rank`,`min`,`max`,`name`) VALUES ('4','1700','1999','WORLD CLASS');
+INSERT INTO `leaderboard_ranks` (`rank`,`min`,`max`,`name`) VALUES ('5','2000','9999','LEGENDARY');
+
+CREATE TABLE players (
+	steam_id VARCHAR(34) PRIMARY KEY,
+	name text NOT NULL,
+	position text,
+	team text,
+	elo int NOT NULL DEFAULT 0,
+	add_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+also create stats table
