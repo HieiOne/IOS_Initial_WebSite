@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>IOSoccer Official</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/leaderboard.css" />
     <link rel="icon" href="img/game.ico">
 </head>
 <body>
@@ -23,7 +23,11 @@
         //HEADER
         include("header.php");
     ?>
-        <p>Under construction</p>
+
+        <div class="content">
+
+        
+        </div>
         <?php include('footer.php'); ?>
     </div>
     
