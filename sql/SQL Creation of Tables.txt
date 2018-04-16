@@ -64,7 +64,7 @@ CREATE TABLE players (
 	steam_id VARCHAR(34) PRIMARY KEY,
 	name text NOT NULL,
 	position text,
-	team text,
+	team_id INT,
 	elo int NOT NULL DEFAULT 0,
 	add_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
